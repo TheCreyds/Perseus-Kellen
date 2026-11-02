@@ -168,3 +168,38 @@
 .perseus-footer-box {
     color: inherit !important;
 }
+/* ==========================================
+   PERSEUS - ADAPTACIÓN AL MODO CLARO
+   Foroactivo: skin2
+   ========================================== */
+
+body.skin2 .perseus-box,
+body.skin2 .perseus-inner {
+    color: #333333 !important;
+}
+
+/* Título */
+body.skin2 .perseus-title {
+    color: #29212f !important;
+}
+
+/* Texto narrativo */
+body.skin2 .perseus-content-wrap,
+body.skin2 .perseus-text-main {
+    color: #333333 !important;
+}
+
+/* Letra capitular */
+body.skin2 .perseus-capitular {
+    color: #581c87 !important;
+}
+
+/* Menciones e interacciones */
+body.skin2 .perseus-footer-box {
+    color: #333333 !important;
+}
+
+/* Etiquetas */
+body.skin2 .perseus-footer-title {
+    color: #7e22ce !important;
+}
