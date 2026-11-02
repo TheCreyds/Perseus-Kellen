@@ -30,3 +30,48 @@
 .perseus-footer-box {
     font-family: inherit;
 }
+
+
+/* =========================================
+   PERSEUS - TRANSPARENCIA Y FUENTE DEL FORO
+   ========================================= */
+
+/* Eliminar fondos y conservar bordes */
+.perseus-box,
+.perseus-inner,
+.perseus-footer-box {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* Fuente predeterminada del foro */
+.perseus-box {
+    font-family: inherit !important;
+}
+
+.perseus-content-wrap,
+.perseus-text-main {
+    font-family: inherit !important;
+}
+
+.perseus-footer-box {
+    font-family: inherit !important;
+}
+
+/* Encabezado independiente en Georgia */
+.perseus-header,
+.perseus-header * {
+    font-family: Georgia, serif !important;
+}
+
+/* Menciones e interacción */
+.perseus-footer-title {
+    font-family: inherit !important;
+    font-weight: bold;
+    color: #c084fc;
+}
+
+/* Conservar la letra capitular decorativa */
+.perseus-capitular {
+    font-family: 'Cinzel Decorative', serif !important;
+}
