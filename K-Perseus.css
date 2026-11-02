@@ -121,3 +121,31 @@
     color: #c084fc;
     opacity: 0.7;
 }
+/* PERSEUS - TRANSPARENCIA Y TIPOGRAFÍA */
+
+/* Eliminar fondos sin quitar bordes ni decoración */
+.perseus-box,
+.perseus-inner,
+.perseus-footer-box {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* Usar la tipografía predeterminada del foro */
+.perseus-box,
+.perseus-content-wrap,
+.perseus-text-main,
+.perseus-footer-box {
+    font-family: inherit !important;
+}
+
+/* Mantener la estética del encabezado */
+.perseus-header,
+.perseus-header * {
+    font-family: Georgia, serif !important;
+}
+
+/* Mantener la letra capitular */
+.perseus-capitular {
+    font-family: 'Cinzel Decorative', serif !important;
+}
