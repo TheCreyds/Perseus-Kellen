@@ -149,3 +149,22 @@
 .perseus-capitular {
     font-family: 'Cinzel Decorative', serif !important;
 }
+/* ADAPTACIÓN AUTOMÁTICA AL MODO CLARO Y OSCURO */
+
+/* Heredar el color de texto del foro */
+.perseus-box,
+.perseus-inner,
+.perseus-content-wrap,
+.perseus-text-main {
+    color: inherit !important;
+}
+
+/* Letra capitular adaptable */
+.perseus-capitular {
+    color: inherit !important;
+}
+
+/* Texto de menciones e interacciones */
+.perseus-footer-box {
+    color: inherit !important;
+}
