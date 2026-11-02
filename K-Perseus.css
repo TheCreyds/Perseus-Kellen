@@ -146,13 +146,4 @@
 .perseus-footer-icon {
   font-family: 'Cinzel', serif;
   font-size: 16px;
-  color: #c084fc;
-  opacity: 0.7;
-}
-#p-tab1:checked ~ .perseus-inner .perseus-header .perseus-tabs label.lbl-1,
-#p-tab2:checked ~ .perseus-inner .perseus-header .perseus-tabs label.lbl-2 {
-  background: #9333ea !important;
-  color: #ffffff !important;
-  border-color: #c084fc !important;
-  box-shadow: 0 0 8px rgba(147,51,234,0.6);
-}
+  color: #c0
