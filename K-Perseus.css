@@ -203,3 +203,32 @@ body.skin2 .perseus-footer-box {
 body.skin2 .perseus-footer-title {
     color: #7e22ce !important;
 }
+/* ==========================================
+   PERSEUS - MODO CLARO FOROACTIVO
+   ========================================== */
+
+body.skin2 .perseus-box,
+body.skin2 .perseus-inner,
+body.skin2 .perseus-content-wrap,
+body.skin2 .perseus-text-main,
+body.skin2 .perseus-footer-box,
+body.skin2 .perseus-text-main * {
+    color: #333333 !important;
+}
+
+body.skin2 .perseus-capitular {
+    color: #581c87 !important;
+}
+
+body.skin2 .perseus-title {
+    color: #29212f !important;
+}
+
+body.skin2 .perseus-frase,
+body.skin2 .perseus-subtitle {
+    color: #7e22ce !important;
+}
+
+body.skin2 .perseus-footer-title {
+    color: #7e22ce !important;
+}
