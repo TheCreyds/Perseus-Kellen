@@ -218,3 +218,34 @@
     letter-spacing: 2px;
     color: #c084fc;
 }
+/* SEPARADOR DE NOCHES */
+
+.perseus-night {
+    width: 180px;
+    margin: 22px auto;
+    padding: 9px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(18,10,23,0.95);
+    border: 1px solid #9333ea;
+    border-radius: 5px;
+    color: #f3e8ff;
+    font-family: Georgia, serif;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+}
+
+.perseus-night-title {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #e9d5ff;
+    text-transform: uppercase;
+}
+
+.perseus-night-decoration {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #c084fc;
+}
