@@ -4,6 +4,11 @@
    Tablilla de rol - Foroactivo PHPBB3
    ========================================= */
 
+
+/* -----------------------------------------
+   ESTRUCTURA PRINCIPAL
+   ----------------------------------------- */
+
 .perseus-box {
     width: 600px;
     max-width: 100%;
@@ -11,38 +16,48 @@
     padding: 30px;
     box-sizing: border-box;
 
-    background: linear-gradient(
-        135deg,
-        #120a17 0%,
-        #08040a 50%,
-        #15091c 100%
-    );
+    background: transparent;
+    background-image: none;
 
     border: 3px solid #581c87;
     border-radius: 10px;
 
-    font-family: Georgia, serif;
-    color: #e9d5ff;
+    font-family: inherit;
+    color: inherit;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
+
+
+/* -----------------------------------------
+   CONTENEDOR INTERIOR
+   ----------------------------------------- */
 
 .perseus-inner {
     padding: 22px 20px 18px;
     box-sizing: border-box;
 
-    background: rgba(10,5,15,0.6);
+    background: transparent;
 
     border: 1px solid #9333ea;
     border-radius: 6px;
+
+    color: inherit;
 }
+
+
+/* -----------------------------------------
+   ENCABEZADO
+   ----------------------------------------- */
 
 .perseus-header {
     text-align: center;
     margin-bottom: 18px;
+    font-family: Georgia, serif;
 }
 
 .perseus-subtitle {
+    font-family: Georgia, serif;
     font-size: 9px;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -52,6 +67,7 @@
 
 .perseus-title {
     margin: 8px 0 6px;
+    font-family: Georgia, serif;
     font-size: 22px;
     letter-spacing: 2px;
     font-weight: bold;
@@ -61,11 +77,17 @@
 
 .perseus-frase {
     margin-bottom: 14px;
+    font-family: Georgia, serif;
     font-size: 11px;
     font-style: italic;
     color: #d8b4fe;
     letter-spacing: 1px;
 }
+
+
+/* -----------------------------------------
+   CUERPO NARRATIVO
+   ----------------------------------------- */
 
 .perseus-content-wrap {
     position: relative;
@@ -73,23 +95,38 @@
     overflow-y: auto;
     padding-right: 5px;
     margin-bottom: 15px;
+
+    font-family: inherit;
+    color: inherit;
 }
 
 .perseus-text-main {
+    font-family: inherit;
     font-size: 15px;
     line-height: 1.8;
     text-align: justify;
-    color: #f3e8ff;
+    color: inherit;
 }
+
+
+/* -----------------------------------------
+   LETRA CAPITULAR
+   ----------------------------------------- */
 
 .perseus-capitular {
     float: left;
+    font-family: 'Cinzel Decorative', Georgia, serif;
     font-size: 38px;
     line-height: 30px;
     padding-top: 4px;
     padding-right: 8px;
     color: #c084fc;
 }
+
+
+/* -----------------------------------------
+   PIE: MENCIONES E INTERACCIONES
+   ----------------------------------------- */
 
 .perseus-footer-box {
     display: flex;
@@ -99,17 +136,19 @@
     padding: 10px 14px;
     box-sizing: border-box;
 
-    background: rgba(88,28,135,0.15);
+    background: transparent;
 
-    border: 1px dashed rgba(147,51,234,0.5);
+    border: 1px dashed rgba(147, 51, 234, 0.5);
     border-radius: 4px;
 
+    font-family: inherit;
     font-size: 12.5px;
     line-height: 1.6;
-    color: #f3e8ff;
+    color: inherit;
 }
 
 .perseus-footer-title {
+    font-family: inherit;
     font-size: 10.5px;
     letter-spacing: 1px;
     font-weight: bold;
@@ -121,114 +160,48 @@
     color: #c084fc;
     opacity: 0.7;
 }
-/* PERSEUS - TRANSPARENCIA Y TIPOGRAFÍA */
 
-/* Eliminar fondos sin quitar bordes ni decoración */
-.perseus-box,
-.perseus-inner,
-.perseus-footer-box {
-    background: transparent !important;
-    background-image: none !important;
-}
 
-/* Usar la tipografía predeterminada del foro */
-.perseus-box,
-.perseus-content-wrap,
-.perseus-text-main,
-.perseus-footer-box {
-    font-family: inherit !important;
-}
-
-/* Mantener la estética del encabezado */
-.perseus-header,
-.perseus-header * {
-    font-family: Georgia, serif !important;
-}
-
-/* Mantener la letra capitular */
-.perseus-capitular {
-    font-family: 'Cinzel Decorative', serif !important;
-}
-/* ADAPTACIÓN AUTOMÁTICA AL MODO CLARO Y OSCURO */
-
-/* Heredar el color de texto del foro */
-.perseus-box,
-.perseus-inner,
-.perseus-content-wrap,
-.perseus-text-main {
-    color: inherit !important;
-}
-
-/* Letra capitular adaptable */
-.perseus-capitular {
-    color: inherit !important;
-}
-
-/* Texto de menciones e interacciones */
-.perseus-footer-box {
-    color: inherit !important;
-}
-/* ==========================================
-   PERSEUS - ADAPTACIÓN AL MODO CLARO
-   Foroactivo: skin2
-   ========================================== */
-
-body.skin2 .perseus-box,
-body.skin2 .perseus-inner {
-    color: #333333 !important;
-}
-
-/* Título */
-body.skin2 .perseus-title {
-    color: #29212f !important;
-}
-
-/* Texto narrativo */
-body.skin2 .perseus-content-wrap,
-body.skin2 .perseus-text-main {
-    color: #333333 !important;
-}
-
-/* Letra capitular */
-body.skin2 .perseus-capitular {
-    color: #581c87 !important;
-}
-
-/* Menciones e interacciones */
-body.skin2 .perseus-footer-box {
-    color: #333333 !important;
-}
-
-/* Etiquetas */
-body.skin2 .perseus-footer-title {
-    color: #7e22ce !important;
-}
-/* ==========================================
-   PERSEUS - MODO CLARO FOROACTIVO
-   ========================================== */
+/* =========================================
+   ADAPTACIÓN AL MODO CLARO
+   Foroactivo: body.skin2
+   ========================================= */
 
 body.skin2 .perseus-box,
 body.skin2 .perseus-inner,
 body.skin2 .perseus-content-wrap,
 body.skin2 .perseus-text-main,
-body.skin2 .perseus-footer-box,
-body.skin2 .perseus-text-main * {
+body.skin2 .perseus-text-main *,
+body.skin2 .perseus-footer-box {
     color: #333333 !important;
 }
 
-body.skin2 .perseus-capitular {
-    color: #581c87 !important;
-}
+
+/* Título */
 
 body.skin2 .perseus-title {
     color: #29212f !important;
 }
 
-body.skin2 .perseus-frase,
-body.skin2 .perseus-subtitle {
+
+/* Subtítulo y frase */
+
+body.skin2 .perseus-subtitle,
+body.skin2 .perseus-frase {
     color: #7e22ce !important;
 }
 
-body.skin2 .perseus-footer-title {
+
+/* Capitular */
+
+body.skin2 .perseus-capitular {
+    color: #581c87 !important;
+}
+
+
+/* Etiquetas del pie */
+
+body.skin2 .perseus-footer-title,
+body.skin2 .perseus-footer-icon {
     color: #7e22ce !important;
 }
