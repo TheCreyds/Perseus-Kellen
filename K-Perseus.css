@@ -3,17 +3,14 @@
    Tablilla de rol - Foroactivo PHPBB3
    ========================================= */
 
-/* -----------------------------------------
-   ESTRUCTURA PRINCIPAL
-   ----------------------------------------- */
 .perseus-box {
     width: 600px;
     max-width: 100%;
     margin: 30px auto;
     padding: 30px;
     box-sizing: border-box;
-    background: transparent;
-    background-image: none;
+    background: transparent !important;
+    background-image: none !important;
     border: 3px solid #581c87;
     border-radius: 10px;
     font-family: inherit;
@@ -21,127 +18,107 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
-/* -----------------------------------------
-   CONTENEDOR INTERIOR
-   ----------------------------------------- */
 .perseus-inner {
     padding: 22px 20px 18px;
     box-sizing: border-box;
-    background: transparent;
+    background: transparent !important;
     border: 1px solid #9333ea;
     border-radius: 6px;
     color: inherit;
 }
 
-/* -----------------------------------------
-   ENCABEZADO (Georgia siempre)
-   ----------------------------------------- */
+/* ENCABEZADO */
 .perseus-header {
     text-align: center;
     margin-bottom: 18px;
-    font-family: Georgia, serif;
+    font-family: Georgia, serif !important;
 }
 
 .perseus-subtitle {
-    font-family: Georgia, serif;
+    font-family: Georgia, serif !important;
     font-size: 9px;
     letter-spacing: 6px;
     text-transform: uppercase;
     font-weight: bold;
-    color: #c084fc;
 }
 
 .perseus-title {
     margin: 8px 0 6px;
-    font-family: Georgia, serif;
+    font-family: Georgia, serif !important;
     font-size: 22px;
     letter-spacing: 2px;
     font-weight: bold;
-    color: inherit;
     text-transform: uppercase;
 }
 
 .perseus-frase {
     margin-bottom: 14px;
-    font-family: Georgia, serif;
+    font-family: Georgia, serif !important;
     font-size: 11px;
     font-style: italic;
-    color: #d8b4fe;
     letter-spacing: 1px;
 }
 
-/* -----------------------------------------
-   CUERPO NARRATIVO (fuente del foro)
-   ----------------------------------------- */
+/* CUERPO NARRATIVO - fuente del foro */
 .perseus-content-wrap {
     position: relative;
     height: 210px;
     overflow-y: auto;
     padding-right: 5px;
     margin-bottom: 15px;
-    font-family: inherit;
+    font-family: inherit !important;
     color: inherit;
 }
 
 .perseus-text-main {
-    font-family: inherit;          /* ← Fuente predeterminada del foro */
+    font-family: inherit !important;
     font-size: 14px;
     line-height: 1.8;
     text-align: justify;
     color: inherit;
 }
 
-/* -----------------------------------------
-   LETRA CAPITULAR
-   ----------------------------------------- */
+/* LETRA CAPITULAR */
 .perseus-capitular {
     float: left;
-    font-family: 'Cinzel Decorative', Georgia, serif;
+    font-family: 'Cinzel Decorative', Georgia, serif !important;
     font-size: 38px;
     line-height: 30px;
     padding-top: 4px;
     padding-right: 8px;
-    color: #c084fc;
 }
 
-/* -----------------------------------------
-   PIE: MENCIONES E INTERACCIONES (fuente del foro)
-   ----------------------------------------- */
+/* FOOTER - fuente del foro */
 .perseus-footer-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 14px;
     box-sizing: border-box;
-    background: transparent;
+    background: transparent !important;
     border: 1px dashed rgba(147, 51, 234, 0.5);
     border-radius: 4px;
-    font-family: inherit;          /* ← Fuente predeterminada del foro */
+    font-family: inherit !important;
     font-size: 12.5px;
     line-height: 1.6;
     color: inherit;
 }
 
 .perseus-footer-title {
-    font-family: inherit;
+    font-family: inherit !important;
     font-size: 10.5px;
     letter-spacing: 1px;
     font-weight: bold;
-    color: #c084fc;
 }
 
 .perseus-footer-icon {
     font-size: 16px;
-    color: #c084fc;
     opacity: 0.7;
 }
 
 /* =========================================
-   ADAPTACIÓN MODO CLARO / OSCURO
-   (body.skin2 = modo claro en tu foro)
+   MODO CLARO (body.skin2)
    ========================================= */
-
-/* ----- MODO CLARO ----- */
 body.skin2 .perseus-box,
 body.skin2 .perseus-inner,
 body.skin2 .perseus-content-wrap,
@@ -157,15 +134,14 @@ body.skin2 .perseus-title {
 body.skin2 .perseus-subtitle,
 body.skin2 .perseus-frase,
 body.skin2 .perseus-footer-title,
-body.skin2 .perseus-footer-icon {
+body.skin2 .perseus-footer-icon,
+body.skin2 .perseus-capitular {
     color: #7e22ce !important;
 }
 
-body.skin2 .perseus-capitular {
-    color: #581c87 !important;
-}
-
-/* ----- MODO OSCURO ----- */
+/* =========================================
+   MODO OSCURO (sin skin2)
+   ========================================= */
 body:not(.skin2) .perseus-box,
 body:not(.skin2) .perseus-inner,
 body:not(.skin2) .perseus-content-wrap,
