@@ -34,7 +34,7 @@
 }
 
 /* -----------------------------------------
-   ENCABEZADO
+   ENCABEZADO (Georgia siempre)
    ----------------------------------------- */
 .perseus-header {
     text-align: center;
@@ -57,7 +57,7 @@
     font-size: 22px;
     letter-spacing: 2px;
     font-weight: bold;
-    color: inherit; /* Hereda el color del modo oscuro/claro del foro */
+    color: inherit;
     text-transform: uppercase;
 }
 
@@ -71,7 +71,7 @@
 }
 
 /* -----------------------------------------
-   CUERPO NARRATIVO (Usa la fuente del foro)
+   CUERPO NARRATIVO (fuente del foro)
    ----------------------------------------- */
 .perseus-content-wrap {
     position: relative;
@@ -84,11 +84,11 @@
 }
 
 .perseus-text-main {
-    font-family: inherit; /* Fuente predeterminada del foro */
+    font-family: inherit;          /* ← Fuente predeterminada del foro */
     font-size: 14px;
     line-height: 1.8;
     text-align: justify;
-    color: inherit; /* Cambia a blanco en oscuro y negro/gris en claro automáticamente */
+    color: inherit;
 }
 
 /* -----------------------------------------
@@ -105,7 +105,7 @@
 }
 
 /* -----------------------------------------
-   PIE: MENCIONES E INTERACCIONES (Fuente del foro)
+   PIE: MENCIONES E INTERACCIONES (fuente del foro)
    ----------------------------------------- */
 .perseus-footer-box {
     display: flex;
@@ -116,10 +116,10 @@
     background: transparent;
     border: 1px dashed rgba(147, 51, 234, 0.5);
     border-radius: 4px;
-    font-family: inherit; /* Fuente predeterminada del foro */
+    font-family: inherit;          /* ← Fuente predeterminada del foro */
     font-size: 12.5px;
     line-height: 1.6;
-    color: inherit; /* Hereda el color según el modo del foro */
+    color: inherit;
 }
 
 .perseus-footer-title {
@@ -137,51 +137,11 @@
 }
 
 /* =========================================
-   ADAPTACIÓN AL MODO CLARO Y OSCURO DE FOROACTIVO
+   ADAPTACIÓN MODO CLARO / OSCURO
+   (body.skin2 = modo claro en tu foro)
    ========================================= */
 
-/* Modo Claro (skin2) */
-body.skin2 .perseus-box,
-body.skin2 .perseus-inner,
-body.skin2 .perseus-content-wrap,
-body.skin2 .perseus-text-main,
-body.skin2 .perseus-footer-box {
-    color: #333333 !important;
-}
-
-body.skin2 .perseus-title {
-    color: #29212f !important;
-}
-
-body.skin2 .perseus-subtitle,
-body.skin2 .perseus-frase {
-    color: #7e22ce !important;
-}
-
-body.skin2 .perseus-capitular {
-    color: #581c87 !important;
-}
-
-body.skin2 .perseus-footer-title,
-body.skin2 .perseus-footer-icon {
-    color: #7e22ce !important;
-}
-
-/* Modo Oscuro predeterminado de Foroactivo (asegura letras blancas si aplica skin por defecto o clases oscuras) */
-body:not(.skin2) .perseus-text-main,
-body:not(.skin2) .perseus-footer-box,
-body:not(.skin2) .perseus-title {
-    color: #f3e8ff;
-}
-
-
-/* =========================================
-   PERSEUS - ADAPTACIÓN DE COLORES
-   FOROACTIVO PHPBB3
-   ========================================= */
-
-/* MODO CLARO */
-
+/* ----- MODO CLARO ----- */
 body.skin2 .perseus-box,
 body.skin2 .perseus-inner,
 body.skin2 .perseus-content-wrap,
@@ -205,8 +165,7 @@ body.skin2 .perseus-capitular {
     color: #581c87 !important;
 }
 
-/* MODO OSCURO */
-
+/* ----- MODO OSCURO ----- */
 body:not(.skin2) .perseus-box,
 body:not(.skin2) .perseus-inner,
 body:not(.skin2) .perseus-content-wrap,
