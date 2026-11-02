@@ -173,3 +173,56 @@ body:not(.skin2) .perseus-footer-box,
 body:not(.skin2) .perseus-title {
     color: #f3e8ff;
 }
+
+
+/* =========================================
+   PERSEUS - ADAPTACIÓN DE COLORES
+   FOROACTIVO PHPBB3
+   ========================================= */
+
+/* MODO CLARO */
+
+body.skin2 .perseus-box,
+body.skin2 .perseus-inner,
+body.skin2 .perseus-content-wrap,
+body.skin2 .perseus-text-main,
+body.skin2 .perseus-footer-box {
+    color: #333333 !important;
+}
+
+body.skin2 .perseus-title {
+    color: #29212f !important;
+}
+
+body.skin2 .perseus-subtitle,
+body.skin2 .perseus-frase,
+body.skin2 .perseus-footer-title,
+body.skin2 .perseus-footer-icon {
+    color: #7e22ce !important;
+}
+
+body.skin2 .perseus-capitular {
+    color: #581c87 !important;
+}
+
+/* MODO OSCURO */
+
+body:not(.skin2) .perseus-box,
+body:not(.skin2) .perseus-inner,
+body:not(.skin2) .perseus-content-wrap,
+body:not(.skin2) .perseus-text-main,
+body:not(.skin2) .perseus-footer-box {
+    color: #f3e8ff !important;
+}
+
+body:not(.skin2) .perseus-title {
+    color: #f3e8ff !important;
+}
+
+body:not(.skin2) .perseus-subtitle,
+body:not(.skin2) .perseus-frase,
+body:not(.skin2) .perseus-footer-title,
+body:not(.skin2) .perseus-footer-icon,
+body:not(.skin2) .perseus-capitular {
+    color: #c084fc !important;
+}
