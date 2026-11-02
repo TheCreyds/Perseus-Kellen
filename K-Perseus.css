@@ -1,123 +1,32 @@
 
 /* =========================================
-   FRATERNIDAD PERSEUS
-   Tablilla de rol - Foroactivo PHPBB3
+   PERSEUS - ACTUALIZACIÓN TRANSPARENTE
    ========================================= */
 
-.perseus-box {
-    width: 600px;
-    max-width: 100%;
-    margin: 30px auto;
-    padding: 30px;
-    box-sizing: border-box;
-
-    background: linear-gradient(
-        135deg,
-        #120a17 0%,
-        #08040a 50%,
-        #15091c 100%
-    );
-
-    border: 3px solid #581c87;
-    border-radius: 10px;
-
-    font-family: Georgia, serif;
-    color: #e9d5ff;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-}
-
-.perseus-inner {
-    padding: 22px 20px 18px;
-    box-sizing: border-box;
-
-    background: rgba(10,5,15,0.6);
-
-    border: 1px solid #9333ea;
-    border-radius: 6px;
-}
-
-.perseus-header {
-    text-align: center;
-    margin-bottom: 18px;
-}
-
-.perseus-subtitle {
-    font-size: 9px;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #c084fc;
-}
-
-.perseus-title {
-    margin: 8px 0 6px;
-    font-size: 22px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: #f3e8ff;
-    text-transform: uppercase;
-}
-
-.perseus-frase {
-    margin-bottom: 14px;
-    font-size: 11px;
-    font-style: italic;
-    color: #d8b4fe;
-    letter-spacing: 1px;
-}
-
-.perseus-content-wrap {
-    position: relative;
-    height: 210px;
-    overflow-y: auto;
-    padding-right: 5px;
-    margin-bottom: 15px;
-}
-
-.perseus-text-main {
-    font-size: 15px;
-    line-height: 1.8;
-    text-align: justify;
-    color: #f3e8ff;
-}
-
-.perseus-capitular {
-    float: left;
-    font-size: 38px;
-    line-height: 30px;
-    padding-top: 4px;
-    padding-right: 8px;
-    color: #c084fc;
-}
-
+/* Eliminar todos los fondos */
+.perseus-box,
+.perseus-inner,
 .perseus-footer-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 10px 14px;
-    box-sizing: border-box;
-
-    background: rgba(88,28,135,0.15);
-
-    border: 1px dashed rgba(147,51,234,0.5);
-    border-radius: 4px;
-
-    font-size: 12.5px;
-    line-height: 1.6;
-    color: #f3e8ff;
+    background: transparent !important;
 }
 
-.perseus-footer-title {
-    font-size: 10.5px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    color: #c084fc;
+/* La tablilla hereda la tipografía del foro */
+.perseus-box {
+    font-family: inherit;
 }
 
-.perseus-footer-icon {
-    font-size: 16px;
-    color: #c084fc;
-    opacity: 0.7;
+/* Encabezado conserva Georgia */
+.perseus-header {
+    font-family: Georgia, serif;
+}
+
+/* Narración utiliza la fuente predeterminada */
+.perseus-content-wrap,
+.perseus-text-main {
+    font-family: inherit;
+}
+
+/* Menciones e interacción utilizan la fuente del foro */
+.perseus-footer-box {
+    font-family: inherit;
 }
