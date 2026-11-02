@@ -1,55 +1,41 @@
-
 /* =========================================
    FRATERNIDAD PERSEUS
    Tablilla de rol - Foroactivo PHPBB3
    ========================================= */
 
-
 /* -----------------------------------------
    ESTRUCTURA PRINCIPAL
    ----------------------------------------- */
-
 .perseus-box {
     width: 600px;
     max-width: 100%;
     margin: 30px auto;
     padding: 30px;
     box-sizing: border-box;
-
     background: transparent;
     background-image: none;
-
     border: 3px solid #581c87;
     border-radius: 10px;
-
     font-family: inherit;
     color: inherit;
-
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
-
 
 /* -----------------------------------------
    CONTENEDOR INTERIOR
    ----------------------------------------- */
-
 .perseus-inner {
     padding: 22px 20px 18px;
     box-sizing: border-box;
-
     background: transparent;
-
     border: 1px solid #9333ea;
     border-radius: 6px;
-
     color: inherit;
 }
-
 
 /* -----------------------------------------
    ENCABEZADO
    ----------------------------------------- */
-
 .perseus-header {
     text-align: center;
     margin-bottom: 18px;
@@ -71,7 +57,7 @@
     font-size: 22px;
     letter-spacing: 2px;
     font-weight: bold;
-    color: #f3e8ff;
+    color: inherit; /* Hereda el color del modo oscuro/claro del foro */
     text-transform: uppercase;
 }
 
@@ -84,35 +70,30 @@
     letter-spacing: 1px;
 }
 
-
 /* -----------------------------------------
-   CUERPO NARRATIVO
+   CUERPO NARRATIVO (Usa la fuente del foro)
    ----------------------------------------- */
-
 .perseus-content-wrap {
     position: relative;
     height: 210px;
     overflow-y: auto;
     padding-right: 5px;
     margin-bottom: 15px;
-
     font-family: inherit;
     color: inherit;
 }
 
 .perseus-text-main {
-    font-family: inherit;
-    font-size: 15px;
+    font-family: inherit; /* Fuente predeterminada del foro */
+    font-size: 14px;
     line-height: 1.8;
     text-align: justify;
-    color: inherit;
+    color: inherit; /* Cambia a blanco en oscuro y negro/gris en claro automáticamente */
 }
-
 
 /* -----------------------------------------
    LETRA CAPITULAR
    ----------------------------------------- */
-
 .perseus-capitular {
     float: left;
     font-family: 'Cinzel Decorative', Georgia, serif;
@@ -123,28 +104,22 @@
     color: #c084fc;
 }
 
-
 /* -----------------------------------------
-   PIE: MENCIONES E INTERACCIONES
+   PIE: MENCIONES E INTERACCIONES (Fuente del foro)
    ----------------------------------------- */
-
 .perseus-footer-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 10px 14px;
     box-sizing: border-box;
-
     background: transparent;
-
     border: 1px dashed rgba(147, 51, 234, 0.5);
     border-radius: 4px;
-
-    font-family: inherit;
+    font-family: inherit; /* Fuente predeterminada del foro */
     font-size: 12.5px;
     line-height: 1.6;
-    color: inherit;
+    color: inherit; /* Hereda el color según el modo del foro */
 }
 
 .perseus-footer-title {
@@ -161,47 +136,40 @@
     opacity: 0.7;
 }
 
-
 /* =========================================
-   ADAPTACIÓN AL MODO CLARO
-   Foroactivo: body.skin2
+   ADAPTACIÓN AL MODO CLARO Y OSCURO DE FOROACTIVO
    ========================================= */
 
+/* Modo Claro (skin2) */
 body.skin2 .perseus-box,
 body.skin2 .perseus-inner,
 body.skin2 .perseus-content-wrap,
 body.skin2 .perseus-text-main,
-body.skin2 .perseus-text-main *,
 body.skin2 .perseus-footer-box {
     color: #333333 !important;
 }
 
-
-/* Título */
-
 body.skin2 .perseus-title {
     color: #29212f !important;
 }
-
-
-/* Subtítulo y frase */
 
 body.skin2 .perseus-subtitle,
 body.skin2 .perseus-frase {
     color: #7e22ce !important;
 }
 
-
-/* Capitular */
-
 body.skin2 .perseus-capitular {
     color: #581c87 !important;
 }
 
-
-/* Etiquetas del pie */
-
 body.skin2 .perseus-footer-title,
 body.skin2 .perseus-footer-icon {
     color: #7e22ce !important;
+}
+
+/* Modo Oscuro predeterminado de Foroactivo (asegura letras blancas si aplica skin por defecto o clases oscuras) */
+body:not(.skin2) .perseus-text-main,
+body:not(.skin2) .perseus-footer-box,
+body:not(.skin2) .perseus-title {
+    color: #f3e8ff;
 }
