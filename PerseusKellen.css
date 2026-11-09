@@ -584,3 +584,210 @@
         margin-left: 12px;
     }
 }
+/* =========================================================
+   CREYDS & KELLEN - TOP 10 LEGENDARY MASTERPIECES
+   ========================================================= */
+
+/* Base Común de Máxima Complejidad */
+.pk-box-master {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background: transparent;
+  color: inherit;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  position: relative;
+  overflow: hidden;
+}
+
+.pk-master-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--grupo-color, #666);
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.pk-master-title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+}
+
+.pk-master-owl {
+  font-size: 18px;
+  color: var(--grupo-color, inherit);
+  opacity: 0.9;
+  filter: drop-shadow(0 0 5px var(--grupo-color, rgba(255,255,255,0.3)));
+}
+
+.pk-master-content {
+  text-align: justify;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.pk-master-footer {
+  border-top: 1px dashed var(--grupo-color, #666);
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+
+/* --- 01. RAYQUAZA (Cyber-Dragón Esmeralda con Retícula Diagonal) --- */
+.pk-rayquaza {
+  border: 2px solid var(--grupo-color, #666);
+  clip-path: polygon(0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+.pk-rayquaza::before {
+  content: '⚡ [ DRAGON_ASCENT // SYSTEM_ACTIVE ] ⚡';
+  position: absolute;
+  top: 6px; right: 15px;
+  font-size: 8px; font-family: monospace; letter-spacing: 2px;
+  color: var(--grupo-color, #666); opacity: 0.6;
+}
+.pk-rayquaza .pk-master-head {
+  border-bottom: 2px solid var(--grupo-color, #666);
+}
+
+
+/* --- 02. GIRATINA (Distorsión Geométrica Inversa) --- */
+.pk-giratina {
+  border: 1px solid var(--grupo-color, #666);
+  outline: 2px solid var(--grupo-color, #666);
+  outline-offset: -8px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.4);
+}
+.pk-giratina::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; width: 100%; height: 4px;
+  background: var(--grupo-color, #666);
+  box-shadow: 0 0 10px var(--grupo-color, #666);
+}
+
+
+/* --- 03. ARCEUS (Anillo Divino y Doble Marco Ceremonial) --- */
+.pk-arceus {
+  border: 4px double var(--grupo-color, #666);
+  border-radius: 24px;
+  padding: 32px;
+  text-align: center;
+}
+.pk-arceus .pk-master-head {
+  justify-content: center;
+  gap: 15px;
+  border-bottom: 1px solid var(--grupo-color, #666);
+}
+.pk-arceus .pk-master-footer {
+  justify-content: center;
+  gap: 30px;
+}
+
+
+/* --- 04. DIALGA (Fractal Temporal de Doble Escudo) --- */
+.pk-dialga {
+  border-left: 10px solid var(--grupo-color, #666);
+  border-right: 2px solid var(--grupo-color, #666);
+  border-top: 2px solid var(--grupo-color, #666);
+  border-bottom: 2px solid var(--grupo-color, #666);
+  border-radius: 4px;
+}
+.pk-dialga .pk-master-head {
+  background: rgba(255,255,255,0.02);
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+
+/* --- 05. PALKIA (Espacio Distorsionado Bicolor) --- */
+.pk-palkia {
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 30px 6px 30px 6px;
+  box-shadow: 6px 6px 0 0 var(--grupo-color, #666);
+}
+.pk-palkia .pk-master-head {
+  border-bottom: 1px dashed var(--grupo-color, #666);
+}
+
+
+/* --- 06. LUGIA (Monolito Abisal con Canal de Luz) --- */
+.pk-lugia {
+  border: 1px solid var(--grupo-color, #666);
+  outline: 1px solid var(--grupo-color, #666);
+  outline-offset: 6px;
+  border-radius: 14px;
+}
+.pk-lugia::before {
+  content: '◆ ─── ABYSSAL_KEEPER ─── ◆';
+  display: block; text-align: center;
+  font-size: 8px; letter-spacing: 3px;
+  margin-bottom: 10px; opacity: 0.7;
+}
+
+
+/* --- 07. HO-OH (Alas Sagradas y Filos Doblados) --- */
+.pk-hooh {
+  border-top: 3px solid var(--grupo-color, #666);
+  border-bottom: 3px solid var(--grupo-color, #666);
+  border-left: 1px solid var(--grupo-color, #666);
+  border-right: 1px solid var(--grupo-color, #666);
+  border-radius: 16px;
+  clip-path: polygon(0 15px, 100% 0, 100% calc(100% - 15px), 0 100%);
+}
+.pk-hooh .pk-master-head {
+  border-bottom: 2px solid var(--grupo-color, #666);
+}
+
+
+/* --- 08. MEWTWO (Red Neural Psíquica Avanzada) --- */
+.pk-mewtwo {
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 50px 10px 50px 10px;
+  padding: 32px;
+}
+.pk-mewtwo .pk-master-head {
+  border-bottom: 2px dotted var(--grupo-color, #666);
+}
+
+
+/* --- 09. GROUDON (Tectónica de Placas Magmáticas) --- */
+.pk-groudon {
+  border-left: 6px double var(--grupo-color, #666);
+  border-right: 6px double var(--grupo-color, #666);
+  border-top: 2px solid var(--grupo-color, #666);
+  border-bottom: 2px solid var(--grupo-color, #666);
+  border-radius: 8px;
+}
+.pk-groudon .pk-master-footer {
+  border-top: 2px solid var(--grupo-color, #666);
+}
+
+
+/* --- 10. KYOGRE (Corriente Abisal Profunda) --- */
+.pk-kyogre {
+  border: 3px double var(--grupo-color, #666);
+  border-radius: 0 40px 0 40px;
+  box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+}
+.pk-kyogre .pk-master-head {
+  border-bottom: 2px solid var(--grupo-color, #666);
+}
