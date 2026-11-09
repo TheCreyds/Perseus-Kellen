@@ -1,0 +1,63 @@
+/* =========================================
+   FRATERNIDAD PERSEUS - ESTILOS EXTERNOS
+   ========================================= */
+
+.rldl2 {
+    width: 600px;
+    max-width: 100%;
+    margin: 20px auto;
+    background: rgba(20, 10, 30, 0.85);
+    border: 2px solid var(--perseus, #9333ea);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.trldl2 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+.drldl2 {
+    font-size: 11px;
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.rldl2ic {
+    font-size: 24px;
+    padding-left: 12px;
+    color: var(--perseus, #9333ea);
+}
+
+.rldl2ln {
+    width: 100%;
+    height: 1px;
+    background: var(--perseus, #9333ea);
+    opacity: 0.3;
+    margin: 15px 0;
+}
+
+.rldl2tx {
+    font-size: 13.5px;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: inherit;
+    color: inherit;
+}
+
+/* Enlaces, negritas y subrayados personalizados con la variable de Perseus */
+.rldl2tx a {
+    color: var(--perseus, #9333ea);
+}
+.rldl2tx b {
+    color: var(--perseus, #9333ea);
+}
+.rldl2tx u {
+    text-decoration: underline var(--perseus, #9333ea) 2px;
+}
