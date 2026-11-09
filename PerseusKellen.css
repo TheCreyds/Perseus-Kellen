@@ -133,3 +133,67 @@ body.skin2 .perseus-footer-title,
 body.skin2 .perseus-footer-icon {
     color: #581c87 !important;
 }
+/* =========================================
+   PERSEUS - TABLILLA MINIMALISTA SIN FONDO
+   ========================================= */
+
+.perseus-minimal {
+    width: 600px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+.perseus-minimal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--perseus, #9333ea);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.perseus-minimal-title {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--perseus, #9333ea);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.perseus-minimal-icon {
+    font-size: 20px;
+    color: var(--perseus, #9333ea);
+    opacity: 0.9;
+}
+
+.perseus-minimal-text {
+    font-size: 13.5px;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: inherit;
+    color: inherit;
+    margin-bottom: 15px;
+}
+
+.perseus-minimal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding-top: 8px;
+    border-top: 1px dashed rgba(147, 51, 234, 0.3);
+    opacity: 0.85;
+}
+
+.perseus-minimal-footer b {
+    color: var(--perseus, #9333ea);
+}
