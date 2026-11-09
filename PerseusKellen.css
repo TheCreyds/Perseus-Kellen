@@ -1594,10 +1594,11 @@
 .v-set2-20 .pk-mod2-ft-item { border: 1px solid var(--grupo-color, #666); }
 
 /* =========================================================
-   CREYDS & KELLEN - SET 3: 10 NUEVAS TABLILLAS INNOVADORAS
+   CREYDS & KELLEN - ARCHIVO EXTERNO COMPLETO (SET 1, 2 Y 3)
    ========================================================= */
 
-.pk-mod3 {
+/* --- ESTILOS BASE Y SET 1 & 2 ANTERIORES --- */
+.pk-mod, .pk-mod2, .pk-mod3 {
   width: 500px;
   max-width: 95%;
   margin: 25px auto;
@@ -1611,6 +1612,7 @@
   position: relative;
 }
 
+/* --- SET 3: ESTILOS INNOVADORES EXTERNOS --- */
 .pk-mod3-head {
   display: flex;
   align-items: center;
@@ -1663,43 +1665,43 @@
   opacity: 0.85;
 }
 
-/* 01. QUANTUM SHIELD (Bordes achaflanados internos) */
+/* 01. QUANTUM SHIELD */
 .v-set3-01 .pk-mod3-body { border: 2px solid var(--grupo-color, #666); clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px); }
 .v-set3-01 .pk-mod3-ft-item { border: 1px dashed var(--grupo-color, #666); }
 
-/* 02. PULSE MATRIX (Doble línea punteada envolvente) */
+/* 02. PULSE MATRIX */
 .v-set3-02 .pk-mod3-body { border: 1px dashed var(--grupo-color, #666); outline: 1px dashed var(--grupo-color, #666); outline-offset: -5px; }
 .v-set3-02 .pk-mod3-icon { border-radius: 6px; }
 
-/* 03. APEX TACTICAL (Pestaña superior flotante de estado) */
+/* 03. APEX TACTICAL */
 .v-set3-03 .pk-mod3-body { border-top: 4px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); border-left: 1px solid var(--grupo-color, #666); border-right: 1px solid var(--grupo-color, #666); }
 .v-set3-03 .pk-mod3-title { letter-spacing: 4px; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 4px; }
 
-/* 04. NEBULA CORE (Cápsula redondeada con sombra sutil) */
+/* 04. NEBULA CORE */
 .v-set3-04 .pk-mod3-body { border: 2px solid var(--grupo-color, #666); border-radius: 18px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
 .v-set3-04 .pk-mod3-icon { border-radius: 50%; }
 
-/* 05. ZENITH LINE (Elegancia minimalista con franja lateral gruesa) */
+/* 05. ZENITH LINE */
 .v-set3-05 .pk-mod3-body { border-left: 8px solid var(--grupo-color, #666); border-top: none; border-right: none; border-bottom: none; background: rgba(0,0,0,0.02); }
 .v-set3-05 .pk-mod3-footer { border-top: 1px solid var(--grupo-color, #666); padding-top: 8px; }
 
-/* 06. OMEGA FRAME (Esquinas superiores rectas, inferiores curvas) */
+/* 06. OMEGA FRAME */
 .v-set3-06 .pk-mod3-body { border: 2px solid var(--grupo-color, #666); border-radius: 0 0 20px 20px; }
 .v-set3-06 .pk-mod3-head { background: rgba(0,0,0,0.04); padding: 8px; border-radius: 4px; }
 
-/* 07. ECLIPSE RING (Marco doble concéntrico con cabecera centrada) */
+/* 07. ECLIPSE RING */
 .v-set3-07 .pk-mod3-body { border: 3px double var(--grupo-color, #666); border-radius: 10px; }
 .v-set3-07 .pk-mod3-head { justify-content: center; flex-direction: column; text-align: center; }
 .v-set3-07 .pk-mod3-title { border-bottom: 1px solid var(--grupo-color, #666); width: 100%; padding-bottom: 6px; }
 
-/* 08. VORTEX BEVEL (Corte diagonal dinámico en el bloque de texto) */
+/* 08. VORTEX BEVEL */
 .v-set3-08 .pk-mod3-body { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 calc(100% - 15px)); }
 .v-set3-08 .pk-mod3-ft-item { border-bottom: 2px solid var(--grupo-color, #666); }
 
-/* 09. CHRONOS GRID (Estructura en bloque con metadatos en cuadrícula sólida) */
+/* 09. CHRONOS GRID */
 .v-set3-09 .pk-mod3-body { border: 1px solid var(--grupo-color, #666); border-radius: 6px; }
 .v-set3-09 .pk-mod3-ft-item { background: rgba(0,0,0,0.05); border: 1px solid var(--grupo-color, #666); border-radius: 4px; }
 
-/* 10. SYNAPSE NODE (Diseño simétrico avanzado con conectores visuales) */
+/* 10. SYNAPSE NODE */
 .v-set3-10 .pk-mod3-body { border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); border-left: 2px dotted var(--grupo-color, #666); border-right: 2px dotted var(--grupo-color, #666); }
 .v-set3-10 .pk-mod3-title { font-weight: 900; letter-spacing: 3px; }
