@@ -197,3 +197,425 @@ body.skin2 .perseus-footer-icon {
 .perseus-minimal-footer b {
     color: var(--perseus, #9333ea);
 }
+/* =========================================
+   FRATERNIDAD PERSEUS - 20 Tablillas de Rol
+   Foroactivo PHPBB3 · TheCreyds
+   ========================================= */
+
+:root {
+  --perseus: #9333ea;
+  --perseus-dark: #581c87;
+  --perseus-light: #c084fc;
+  --perseus-soft: #d8b4fe;
+  --perseus-title: #f3e8ff;
+}
+
+/* ========== BASE COMÚN ========== */
+.p-box {
+  width: 620px;
+  max-width: 100%;
+  margin: 28px auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: inherit;
+  position: relative;
+}
+
+.p-inner {
+  padding: 24px 26px 20px;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+.p-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.p-brand {
+  font-family: Georgia, serif;
+  font-size: 9px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--perseus-light);
+  margin-bottom: 6px;
+}
+
+.p-title {
+  margin: 4px 0 6px;
+  font-family: Georgia, serif;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: var(--perseus-title);
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.p-frase {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--perseus-soft);
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.p-body {
+  font-family: inherit;
+  font-size: 14.5px;
+  line-height: 1.75;
+  text-align: justify;
+  color: inherit;
+  margin-bottom: 16px;
+  max-height: 240px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.p-cap {
+  float: left;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  line-height: 0.85;
+  padding: 4px 10px 0 0;
+  color: var(--perseus-light);
+  font-weight: 700;
+}
+
+.p-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: inherit;
+  border-radius: 4px;
+}
+
+.p-footer b {
+  color: var(--perseus-light);
+  font-size: 10.5px;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+}
+
+.p-owl {
+  font-size: 17px;
+  color: var(--perseus-light);
+  opacity: 0.85;
+}
+
+/* ========== MODO CLARO (skin2) ========== */
+body.skin2 .p-box,
+body.skin2 .p-inner,
+body.skin2 .p-body,
+body.skin2 .p-footer {
+  color: #222 !important;
+}
+body.skin2 .p-title {
+  color: #1e1230 !important;
+}
+body.skin2 .p-brand,
+body.skin2 .p-frase,
+body.skin2 .p-footer b,
+body.skin2 .p-owl,
+body.skin2 .p-cap {
+  color: #6b21a8 !important;
+}
+
+/* ========== 01 · CLÁSICA DOBLE BORDE ========== */
+.p01 .p-box {
+  border: 3px solid var(--perseus-dark);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(88, 28, 135, 0.25);
+  padding: 8px;
+}
+.p01 .p-inner {
+  border: 1px solid var(--perseus);
+  border-radius: 8px;
+  background: transparent;
+}
+.p01 .p-footer {
+  border: 1px dashed rgba(147, 51, 234, 0.45);
+}
+
+/* ========== 02 · MINIMAL LÍNEA ========== */
+.p02 .p-box {
+  border: none;
+  padding: 0;
+}
+.p02 .p-header {
+  border-bottom: 1px solid var(--perseus);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p02 .p-brand { margin: 0; }
+.p02 .p-footer {
+  border-top: 1px dashed rgba(147, 51, 234, 0.35);
+  padding-top: 12px;
+  background: transparent;
+}
+
+/* ========== 03 · MARCO ESTELAR ========== */
+.p03 .p-box {
+  border: 2px solid var(--perseus);
+  border-radius: 4px;
+  padding: 18px;
+  background: linear-gradient(135deg, transparent 0%, rgba(147, 51, 234, 0.04) 100%);
+}
+.p03 .p-title::before,
+.p03 .p-title::after {
+  content: "✦";
+  margin: 0 10px;
+  font-size: 14px;
+  color: var(--perseus-light);
+  opacity: 0.7;
+}
+
+/* ========== 04 · CINTA SUPERIOR ========== */
+.p04 .p-box {
+  border: 1px solid var(--perseus);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.p04 .p-header {
+  background: linear-gradient(90deg, var(--perseus-dark), var(--perseus));
+  margin: -24px -26px 18px;
+  padding: 14px 26px;
+  border-radius: 0;
+}
+.p04 .p-brand,
+.p04 .p-title,
+.p04 .p-frase {
+  color: #faf5ff !important;
+}
+.p04 .p-footer {
+  border: 1px solid rgba(147, 51, 234, 0.3);
+}
+
+/* ========== 05 · SOMBRA SUAVE ========== */
+.p05 .p-box {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px rgba(147, 51, 234, 0.35), 0 20px 40px rgba(88, 28, 135, 0.18);
+  padding: 6px;
+}
+.p05 .p-inner {
+  border-radius: 12px;
+  background: transparent;
+}
+
+/* ========== 06 · LÍNEAS GEOMÉTRICAS ========== */
+.p06 .p-box {
+  border-left: 4px solid var(--perseus);
+  border-right: 4px solid var(--perseus);
+  border-top: 1px solid rgba(147, 51, 234, 0.4);
+  border-bottom: 1px solid rgba(147, 51, 234, 0.4);
+  border-radius: 0;
+  padding: 22px 28px;
+}
+.p06 .p-footer {
+  border-top: 1px solid rgba(147, 51, 234, 0.3);
+  padding-top: 12px;
+}
+
+/* ========== 07 · ÓVALO ELEGANTE ========== */
+.p07 .p-box {
+  border: 2px solid var(--perseus);
+  border-radius: 40px 12px 40px 12px;
+  padding: 8px;
+}
+.p07 .p-inner {
+  border: 1px dashed rgba(192, 132, 252, 0.5);
+  border-radius: 34px 8px 34px 8px;
+}
+
+/* ========== 08 · DOBLE MARCO FINO ========== */
+.p08 .p-box {
+  border: 1px solid var(--perseus-light);
+  padding: 12px;
+  border-radius: 6px;
+}
+.p08 .p-inner {
+  border: 1px solid var(--perseus-dark);
+  border-radius: 4px;
+  padding: 20px 22px;
+}
+
+/* ========== 09 · ACENTO LATERAL ========== */
+.p09 .p-box {
+  border: none;
+  border-left: 6px solid var(--perseus);
+  padding-left: 22px;
+  background: linear-gradient(90deg, rgba(147, 51, 234, 0.06), transparent 60%);
+}
+.p09 .p-footer {
+  border-top: 1px dashed rgba(147, 51, 234, 0.35);
+}
+
+/* ========== 10 · ESTRELLAS EN ESQUINAS ========== */
+.p10 .p-box {
+  border: 2px solid var(--perseus);
+  border-radius: 8px;
+  position: relative;
+}
+.p10 .p-box::before,
+.p10 .p-box::after {
+  content: "✦";
+  position: absolute;
+  font-size: 14px;
+  color: var(--perseus-light);
+  opacity: 0.8;
+}
+.p10 .p-box::before { top: 8px; left: 12px; }
+.p10 .p-box::after { bottom: 8px; right: 12px; }
+
+/* ========== 11 · CABECERA CENTRADA CON ICONO ========== */
+.p11 .p-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.p11 .p-owl-top {
+  font-size: 22px;
+  color: var(--perseus-light);
+  margin-bottom: 4px;
+}
+.p11 .p-box {
+  border: 1px solid var(--perseus);
+  border-radius: 14px;
+  box-shadow: inset 0 0 30px rgba(147, 51, 234, 0.08);
+}
+
+/* ========== 12 · ESTILO PERGAMINO ========== */
+.p12 .p-box {
+  border: 1px solid var(--perseus-soft);
+  border-radius: 2px;
+  background: linear-gradient(180deg, transparent, rgba(147, 51, 234, 0.03));
+  box-shadow: 0 4px 0 var(--perseus-dark);
+}
+.p12 .p-title {
+  letter-spacing: 3px;
+}
+
+/* ========== 13 · MARCO CON BRILLO ========== */
+.p13 .p-box {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: linear-gradient(#0a0a0a, #0a0a0a) padding-box,
+              linear-gradient(135deg, var(--perseus-dark), var(--perseus-light), var(--perseus-dark)) border-box;
+  padding: 4px;
+}
+.p13 .p-inner {
+  border-radius: 9px;
+  background: transparent;
+}
+
+/* ========== 14 · MINIMAL + ICONO DERECHA ========== */
+.p14 .p-box {
+  border-bottom: 2px solid var(--perseus);
+  border-top: 1px solid rgba(147, 51, 234, 0.3);
+  padding: 18px 0;
+}
+.p14 .p-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.p14 .p-footer {
+  border: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+/* ========== 15 · CAJA CON SOMBRA INTERNA ========== */
+.p15 .p-box {
+  border: 1px solid var(--perseus);
+  border-radius: 10px;
+  box-shadow: inset 0 0 40px rgba(88, 28, 135, 0.12);
+  padding: 6px;
+}
+.p15 .p-inner {
+  border: 1px dashed rgba(192, 132, 252, 0.4);
+  border-radius: 7px;
+}
+
+/* ========== 16 · LÍNEA SUPERIOR GRUESA ========== */
+.p16 .p-box {
+  border: none;
+  border-top: 5px solid var(--perseus);
+  border-bottom: 1px solid rgba(147, 51, 234, 0.35);
+  padding-top: 18px;
+}
+.p16 .p-footer {
+  border-top: 1px dashed rgba(147, 51, 234, 0.3);
+}
+
+/* ========== 17 · ESQUINAS REDONDEADAS ASIMÉTRICAS ========== */
+.p17 .p-box {
+  border: 2px solid var(--perseus);
+  border-radius: 28px 6px 28px 6px;
+  padding: 6px;
+}
+.p17 .p-inner {
+  border-radius: 24px 3px 24px 3px;
+  border: 1px solid rgba(147, 51, 234, 0.35);
+}
+
+/* ========== 18 · ESTILO TARJETA ELEVADA ========== */
+.p18 .p-box {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(88, 28, 135, 0.22), 0 2px 6px rgba(0,0,0,0.1);
+  background: transparent;
+  padding: 4px;
+}
+.p18 .p-inner {
+  border: 1px solid rgba(147, 51, 234, 0.4);
+  border-radius: 13px;
+}
+
+/* ========== 19 · DOBLE LÍNEA + CENTRO ========== */
+.p19 .p-box {
+  border: none;
+  padding: 0;
+}
+.p19 .p-header {
+  border-top: 1px solid var(--perseus);
+  border-bottom: 1px solid var(--perseus);
+  padding: 12px 0;
+  margin-bottom: 18px;
+}
+.p19 .p-footer {
+  border: 1px solid rgba(147, 51, 234, 0.35);
+  border-radius: 6px;
+}
+
+/* ========== 20 · NOCTURNA CON DESTELLOS ========== */
+.p20 .p-box {
+  border: 1px solid var(--perseus-light);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(ellipse at top, rgba(147, 51, 234, 0.08), transparent 70%);
+}
+.p20 .p-box::before {
+  content: "✧";
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 11px;
+  color: var(--perseus-soft);
+  opacity: 0.6;
+}
+.p20 .p-footer {
+  border: 1px dashed rgba(192, 132, 252, 0.4);
+}
