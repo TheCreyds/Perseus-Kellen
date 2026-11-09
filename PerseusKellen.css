@@ -786,3 +786,512 @@
 .pk-mod.v-eclipse .pk-mod-body { border: 1px solid var(--grupo-color, #666); border-radius: 14px; }
 .pk-mod.v-eclipse .pk-mod-footer { background: rgba(0,0,0,0.04); padding: 6px; border: 1px solid var(--grupo-color, #666); border-radius: 6px; }
 .pk-mod.v-eclipse .pk-mod-ft-item { border: none; }
+
+
+/* =========================================================
+   CREYDS & KELLEN — ROLEPLAY COLLECTION
+   20 DISEÑOS ORIGINALES PARA FOROACTIVO
+   Título + Narrativa + Interacción + Mención + Outfit
+   Colores heredados / Fondo transparente
+   ========================================================= */
+
+/* ================= BASE GENERAL ================= */
+
+.pk-box {
+  width: 500px;
+  max-width: 95%;
+  margin: 30px auto;
+  padding: 28px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background: transparent !important;
+  color: inherit !important;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  isolation: isolate;
+}
+
+.pk-box,
+.pk-box * {
+  box-sizing: border-box;
+  color: inherit !important;
+}
+
+.pk-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+}
+
+.pk-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit !important;
+}
+
+.pk-owl {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  line-height: 1;
+  opacity: .85;
+}
+
+.pk-content {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 24px;
+  padding: 0;
+  text-align: justify;
+  font-size: 13px;
+  line-height: 1.85;
+  color: inherit !important;
+}
+
+.pk-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-top: 14px;
+  border-top: 1px solid currentColor;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: .85;
+}
+
+.pk-interaction {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 9px;
+}
+
+.pk-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 15px;
+}
+
+.pk-data span {
+  display: inline-block;
+}
+
+.pk-data b {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* ================= 01. NIX ================= */
+/* Hexágono arquitectónico */
+
+.pk-nix {
+  border: 2px solid currentColor;
+  clip-path: polygon(18px 0,calc(100% - 18px) 0,100% 18px,100% calc(100% - 18px),calc(100% - 18px) 100%,18px 100%,0 calc(100% - 18px),0 18px);
+  padding: 32px;
+}
+
+.pk-nix .pk-head {
+  border-bottom: 2px solid currentColor;
+}
+
+/* ================= 02. ZEPHYR ================= */
+/* Líneas abiertas y esquinas geométricas */
+
+.pk-zephyr {
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  outline: 1px solid currentColor;
+  outline-offset: -7px;
+  padding: 32px;
+}
+
+.pk-zephyr .pk-head {
+  border-bottom: 1px dashed currentColor;
+}
+
+.pk-zephyr .pk-owl {
+  border-left: 1px solid currentColor;
+  padding-left: 18px;
+}
+
+/* ================= 03. AETHEL ================= */
+/* Marco editorial doble */
+
+.pk-aethel {
+  border: 5px double currentColor;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.pk-aethel .pk-head {
+  justify-content: center;
+  flex-direction: column-reverse;
+  text-align: center;
+  border-bottom: 1px solid currentColor;
+}
+
+.pk-aethel .pk-owl {
+  font-size: 30px;
+}
+
+/* ================= 04. VORTEX ================= */
+/* Marco asimétrico */
+
+.pk-vortex {
+  border: 2px solid currentColor;
+  border-radius: 35px 0 35px 0;
+  box-shadow: 7px 7px 0 currentColor;
+  margin-bottom: 37px;
+}
+
+.pk-vortex .pk-head {
+  border-left: 6px solid currentColor;
+  padding-left: 15px;
+}
+
+/* ================= 05. ORION ================= */
+/* Panel técnico futurista */
+
+.pk-orion {
+  border: 1px solid currentColor;
+  border-left: 9px solid currentColor;
+  background: transparent !important;
+}
+
+.pk-orion::before {
+  content: '✦  P E R S E U S   /   R O L E P L A Y   S Y S T E M';
+  display: block;
+  margin-bottom: 18px;
+  font-size: 8px;
+  letter-spacing: 2px;
+  opacity: .65;
+}
+
+.pk-orion .pk-head {
+  border-bottom: 1px solid currentColor;
+}
+
+.pk-orion .pk-title {
+  font-size: 19px;
+  letter-spacing: 3px;
+}
+
+/* ================= 06. ASTRAEA ================= */
+/* Composición celestial */
+
+.pk-astraea {
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+  border-left: 1px dashed currentColor;
+  border-right: 1px dashed currentColor;
+  border-radius: 22px;
+  text-align: center;
+}
+
+.pk-astraea .pk-head {
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px dashed currentColor;
+}
+
+.pk-astraea .pk-title {
+  letter-spacing: 4px;
+}
+
+.pk-astraea .pk-content {
+  text-align: justify;
+}
+
+.pk-astraea .pk-footer {
+  text-align: center;
+}
+
+/* ================= 07. CAEDMON ================= */
+/* Placa con esquina metálica */
+
+.pk-caedmon {
+  border: 2px solid currentColor;
+  border-radius: 3px;
+}
+
+.pk-caedmon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  background: transparent;
+}
+
+.pk-caedmon .pk-head {
+  border-bottom: 3px double currentColor;
+}
+
+/* ================= 08. LYNX ================= */
+/* Cápsula ovalada */
+
+.pk-lynx {
+  border: 1px solid currentColor;
+  outline: 2px dashed currentColor;
+  outline-offset: -8px;
+  border-radius: 55px 15px 55px 15px;
+  padding: 35px;
+}
+
+.pk-lynx .pk-head {
+  border-bottom: 1px solid currentColor;
+}
+
+/* ================= 09. CRONOS ================= */
+/* Relojería y numeración */
+
+.pk-cronos {
+  border: 2px solid currentColor;
+  border-radius: 12px 12px 0 0;
+  box-shadow: inset 0 5px 0 currentColor;
+  padding-top: 35px;
+}
+
+.pk-cronos .pk-head {
+  border-bottom: 1px solid currentColor;
+}
+
+.pk-cronos .pk-owl {
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+/* ================= 10. THALIA ================= */
+/* Marco orgánico */
+
+.pk-thalia {
+  border: 2px solid currentColor;
+  border-radius: 45px 10px 45px 10px;
+  padding: 32px;
+}
+
+.pk-thalia .pk-head {
+  border-bottom: 2px dotted currentColor;
+}
+
+/* ================= 11. OBERON ================= */
+/* Gótico arquitectónico */
+
+.pk-oberon {
+  border: 1px solid currentColor;
+  outline: 1px solid currentColor;
+  outline-offset: 6px;
+  margin: 35px auto;
+  padding: 32px;
+}
+
+.pk-oberon .pk-head {
+  border-bottom: 3px double currentColor;
+}
+
+.pk-oberon .pk-title {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+/* ================= 12. VALERIA ================= */
+/* Sello circular y editorial */
+
+.pk-valeria {
+  border: 2px dashed currentColor;
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.pk-valeria .pk-head {
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px dashed currentColor;
+}
+
+.pk-valeria .pk-owl {
+  font-size: 35px;
+}
+
+/* ================= 13. KASSANDRA ================= */
+/* Columna lateral editorial */
+
+.pk-kassandra {
+  border: 1px solid currentColor;
+  border-left: 8px double currentColor;
+  padding-left: 28px;
+}
+
+.pk-kassandra .pk-head {
+  align-items: flex-start;
+  flex-direction: column;
+  border-bottom: 1px solid currentColor;
+}
+
+.pk-kassandra .pk-owl {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 35px;
+}
+
+/* ================= 14. IGNIS ================= */
+/* Franjas de energía */
+
+.pk-ignis {
+  border-top: 5px solid currentColor;
+  border-bottom: 5px solid currentColor;
+  border-left: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  border-radius: 8px;
+}
+
+.pk-ignis .pk-head {
+  border-bottom: 4px double currentColor;
+}
+
+/* ================= 15. SILVAN ================= */
+/* Retícula y geometría natural */
+
+.pk-silvan {
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0 currentColor;
+  margin-bottom: 35px;
+}
+
+.pk-silvan .pk-head {
+  border-bottom: 1px solid currentColor;
+  background-image: repeating-linear-gradient(90deg,transparent,transparent 19px,currentColor 20px,transparent 21px);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* ================= 16. MORRIGAN ================= */
+/* Corte diagonal */
+
+.pk-morrigan {
+  border: 2px solid currentColor;
+  clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 25px) 100%,0 100%);
+  padding: 32px;
+}
+
+.pk-morrigan .pk-head {
+  border-bottom: 1px solid currentColor;
+}
+
+/* ================= 17. ALTAIR ================= */
+/* Constelación y puntos */
+
+.pk-altair {
+  border: 1px solid currentColor;
+  outline: 2px dotted currentColor;
+  outline-offset: -7px;
+  padding: 35px;
+}
+
+.pk-altair .pk-head {
+  border-bottom: 1px dotted currentColor;
+}
+
+.pk-altair .pk-owl {
+  transform: rotate(12deg);
+}
+
+/* ================= 18. SELENE ================= */
+/* Doble cápsula lunar */
+
+.pk-selene {
+  border: 4px double currentColor;
+  border-radius: 60px;
+  padding: 35px;
+}
+
+.pk-selene .pk-head {
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid currentColor;
+}
+
+/* ================= 19. DRACO ================= */
+/* Armadura angular */
+
+.pk-draco {
+  border: 2px solid currentColor;
+  border-radius: 0 35px 0 35px;
+  box-shadow: -5px 5px 0 currentColor;
+}
+
+.pk-draco .pk-head {
+  border-bottom: 2px solid currentColor;
+  border-right: 5px solid currentColor;
+  padding-right: 12px;
+}
+
+/* ================= 20. PERSEUS ================= */
+/* Sello del defensor */
+
+.pk-perseus {
+  border: 2px solid currentColor;
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 5px transparent, inset 0 0 0 6px currentColor;
+  padding: 34px;
+}
+
+.pk-perseus .pk-head {
+  justify-content: center;
+  border-bottom: 2px solid currentColor;
+}
+
+.pk-perseus .pk-owl {
+  font-size: 32px;
+}
+
+.pk-perseus .pk-footer {
+  border-top: 2px solid currentColor;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 540px) {
+  .pk-box {
+    width: 95%;
+    padding: 22px;
+  }
+
+  .pk-title {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+
+  .pk-data {
+    flex-direction: column;
+    gap: 7px;
+  }
+}
