@@ -1,5 +1,5 @@
 /* =========================================================
-   CREYDS & KELLEN - 20 TABLILLAS DECORADAS Y ORIGINALES
+   GEMINI CREYDS & KELLEN - 20 TABLILLAS DECORADAS Y ORIGINALES
    Estructura: Título, Post Rol, Cuadro de Interacción (Mención y Outfit)
    ========================================================= */
 
@@ -238,354 +238,8 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.15), inset 0 0 0 1px var(--grupo-color, #666);
 }
 
-/* ==========================================
-   PERSEUS KELLEN — ROLEPLAY TABLETS
-   FOROACTIVO PHPBB3
-   20 DISEÑOS | CSS EXTERNO
-========================================== */
-
-.pk-box {
-    width: 550px;
-    max-width: 94%;
-    margin: 30px auto;
-    padding: 28px;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-    background: transparent !important;
-    color: inherit !important;
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    font-size: 12px;
-    line-height: 1.8;
-    text-align: justify;
-    letter-spacing: .2px;
-}
-
-.pk-box * {
-    box-sizing: border-box;
-}
-
-.pk-box .pk-head {
-    position: relative;
-    margin-bottom: 23px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid currentColor;
-    border-color: inherit;
-}
-
-.pk-box .pk-kicker {
-    display: block;
-    font-size: 8px;
-    font-weight: 800;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    opacity: .65;
-    margin-bottom: 8px;
-}
-
-.pk-box .pk-title {
-    margin: 0;
-    padding: 0;
-    color: inherit !important;
-    font-size: 23px;
-    font-weight: 900;
-    line-height: 1.2;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.pk-box .pk-subtitle {
-    margin-top: 7px;
-    font-size: 9px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: .65;
-}
-
-.pk-box .pk-owl {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 27px;
-    color: inherit;
-    opacity: .65;
-}
-
-.pk-box .pk-owl i {
-    font-size: inherit;
-}
-
-.pk-box .pk-text {
-    color: inherit !important;
-    font-size: 12px;
-    line-height: 1.9;
-    text-align: justify;
-    overflow-wrap: break-word;
-}
-
-.pk-box .pk-text b,
-.pk-box .pk-text strong {
-    color: inherit;
-    font-weight: 800;
-}
-
-.pk-box .pk-text i {
-    opacity: .85;
-}
-
-.pk-box .pk-footer {
-    position: relative;
-    margin-top: 24px;
-    padding-top: 14px;
-    border-top: 1px solid currentColor;
-    color: inherit;
-    font-size: 9px;
-    line-height: 1.8;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.pk-box .pk-data {
-    display: inline-block;
-    margin: 3px 12px 3px 0;
-}
-
-.pk-box .pk-data b {
-    font-size: 8px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    opacity: .65;
-}
-
-.pk-box .pk-footer-icon {
-    display: block;
-    margin-top: 12px;
-    text-align: right;
-    font-size: 19px;
-    opacity: .75;
-}
-
-.pk-box .pk-footer-icon i {
-    font-size: inherit;
-}
-
-.pk-box a {
-    color: inherit !important;
-    text-decoration: none;
-}
-
-.pk-box a:hover {
-    opacity: .65;
-}
-
-/* ==========================================
-   20 VARIANTES
-========================================== */
-
-/* 01 — ARCHITECT */
-.pk-t01 {
-    border: 1px solid currentColor;
-    border-top: 5px solid currentColor;
-}
-.pk-t01 .pk-title { letter-spacing: 4px; }
-
-/* 02 — ROYAL ARCHIVE */
-.pk-t02 {
-    outline: 1px solid currentColor;
-    outline-offset: -9px;
-    border: 1px solid currentColor;
-    padding: 36px;
-}
-.pk-t02 .pk-head { text-align: center; }
-.pk-t02 .pk-owl { position: static; display: block; margin-bottom: 10px; }
-.pk-t02 .pk-footer { border-top: 3px double currentColor; }
-
-/* 03 — EDITORIAL */
-.pk-t03 {
-    border-left: 7px solid currentColor;
-    padding-left: 30px;
-}
-.pk-t03 .pk-title { font-size: 30px; letter-spacing: -1px; }
-.pk-t03 .pk-head { border-bottom-style: dashed; }
-
-/* 04 — NOCTURNE */
-.pk-t04 {
-    border: 1px solid currentColor;
-    border-radius: 22px 2px 22px 2px;
-    padding: 34px;
-}
-.pk-t04 .pk-title { font-family: Georgia, serif; font-style: italic; }
-.pk-t04 .pk-footer { border-top-style: dotted; }
-
-/* 05 — TYPEWRITER */
-.pk-t05 {
-    border: 1px dashed currentColor;
-    font-family: Georgia, serif;
-    padding: 32px;
-}
-.pk-t05 .pk-title { font-family: monospace; letter-spacing: 1px; }
-.pk-t05 .pk-kicker { font-family: monospace; }
-
-/* 06 — MONOLITH */
-.pk-t06 {
-    border: 4px double currentColor;
-    padding: 32px;
-}
-.pk-t06 .pk-head { border-bottom: 3px double currentColor; }
-.pk-t06 .pk-title { font-size: 27px; }
-
-/* 07 — OFFSET */
-.pk-t07 {
-    border-top: 1px solid currentColor;
-    border-bottom: 1px solid currentColor;
-    padding: 35px 20px;
-}
-.pk-t07 .pk-head { margin-left: 35px; }
-.pk-t07 .pk-text { margin-left: 35px; }
-.pk-t07 .pk-footer { margin-left: 35px; }
-
-/* 08 — OBSIDIAN */
-.pk-t08 {
-    border: 1px solid currentColor;
-    box-shadow: 8px 8px 0 currentColor;
-    margin-bottom: 38px;
-}
-.pk-t08 .pk-title { letter-spacing: 5px; }
-
-/* 09 — THE CHRONICLE */
-.pk-t09 {
-    border: 1px solid currentColor;
-    padding: 38px;
-    font-family: Georgia, serif;
-}
-.pk-t09 .pk-title { font-family: Georgia, serif; font-size: 29px; }
-.pk-t09 .pk-kicker { font-style: italic; letter-spacing: 2px; }
-
-/* 10 — GEOMETRIC */
-.pk-t10 {
-    border: 2px solid currentColor;
-    border-radius: 3px;
-}
-.pk-t10 .pk-head { border-bottom: 2px solid currentColor; }
-.pk-t10 .pk-title { letter-spacing: 6px; }
-
-/* 11 — MINIMAL */
-.pk-t11 {
-    padding: 25px 15px;
-}
-.pk-t11 .pk-head { border-bottom: 2px solid currentColor; }
-.pk-t11 .pk-title { font-size: 32px; font-weight: 300; letter-spacing: 1px; }
-
-/* 12 — THE SEAL */
-.pk-t12 {
-    border: 1px solid currentColor;
-    border-radius: 100px 100px 3px 3px;
-    padding: 45px 32px 30px;
-}
-.pk-t12 .pk-head { text-align: center; }
-.pk-t12 .pk-owl { position: static; display: block; margin-bottom: 12px; }
-.pk-t12 .pk-footer { text-align: center; }
-
-/* 13 — CUT PAPER */
-.pk-t13 {
-    border: 1px solid currentColor;
-    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
-}
-.pk-t13 .pk-title { font-size: 25px; }
-
-/* 14 — CLASSIFIED */
-.pk-t14 {
-    border: 1px solid currentColor;
-    padding: 32px;
-}
-.pk-t14 .pk-kicker { border-bottom: 1px dashed currentColor; padding-bottom: 7px; }
-.pk-t14 .pk-title { font-family: monospace; letter-spacing: 1px; }
-.pk-t14 .pk-footer { font-family: monospace; }
-
-/* 15 — DOUBLE FRAME */
-.pk-t15 {
-    border: 3px double currentColor;
-    outline: 1px solid currentColor;
-    outline-offset: 5px;
-    margin: 35px auto;
-}
-.pk-t15 .pk-head { padding-bottom: 22px; }
-
-/* 16 — FRAGMENT */
-.pk-t16 {
-    border-left: 1px solid currentColor;
-    border-bottom: 1px solid currentColor;
-    padding: 30px 30px 30px 38px;
-}
-.pk-t16 .pk-title { font-family: Georgia, serif; font-style: italic; }
-
-/* 17 — CIRCULAR */
-.pk-t17 {
-    border: 1px solid currentColor;
-    border-radius: 35px;
-    padding: 35px;
-}
-.pk-t17 .pk-head { text-align: center; }
-.pk-t17 .pk-owl { position: static; display: block; margin-bottom: 10px; }
-.pk-t17 .pk-footer { text-align: center; }
-
-/* 18 — BLUEPRINT */
-.pk-t18 {
-    border: 1px solid currentColor;
-    background-image: linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px);
-    background-size: 24px 24px;
-    background-repeat: repeat;
-    background-blend-mode: soft-light;
-}
-.pk-t18 .pk-title { font-family: monospace; letter-spacing: 1px; }
-
-/* 19 — RAVENSHIELD */
-.pk-t19 {
-    border-top: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    padding: 38px 30px;
-}
-.pk-t19 .pk-head { text-align: center; }
-.pk-t19 .pk-owl { position: static; display: block; margin-bottom: 12px; }
-.pk-t19 .pk-title { letter-spacing: 5px; }
-
-/* 20 — PERSEUS SIGNATURE */
-.pk-t20 {
-    border: 1px solid currentColor;
-    padding: 34px;
-    border-radius: 2px;
-}
-.pk-t20 .pk-head { border-bottom: 1px solid currentColor; }
-.pk-t20 .pk-title { font-size: 25px; letter-spacing: 3px; }
-.pk-t20 .pk-owl { font-size: 34px; opacity: .9; }
-.pk-t20 .pk-footer { border-top: 3px double currentColor; }
-
-/* ==========================================
-   RESPONSIVE
-========================================== */
-
-@media screen and (max-width: 600px) {
-    .pk-box {
-        width: 96%;
-        max-width: 96%;
-        padding: 22px;
-    }
-    .pk-box .pk-title {
-        font-size: 20px;
-    }
-    .pk-t02,
-    .pk-t09,
-    .pk-t15 {
-        padding: 27px;
-    }
-    .pk-t07 .pk-head,
-    .pk-t07 .pk-text,
-    .pk-t07 .pk-footer {
-        margin-left: 12px;
-    }
-}
 /* =========================================================
-   CREYDS & KELLEN - TOP 10 LEGENDARY MASTERPIECES (FIXED)
+   CREYDS & KELLEN - MASTERPIECES LEGENDARIAS (FOROACTIVO)
    ========================================================= */
 
 .pk-box-master {
@@ -626,7 +280,6 @@
   font-size: 18px;
   color: var(--grupo-color, inherit);
   opacity: 0.9;
-  filter: drop-shadow(0 0 5px var(--grupo-color, rgba(255,255,255,0.3)));
 }
 
 .pk-master-content {
@@ -649,86 +302,455 @@
   opacity: 0.9;
 }
 
-.pk-master-footer span {
+/* 10 Variaciones Legendarias */
+.pk-rayquaza { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%); }
+.pk-giratina { border: 1px solid var(--grupo-color, #666); outline: 2px solid var(--grupo-color, #666); outline-offset: -8px; border-radius: 8px; }
+.pk-arceus { border: 4px double var(--grupo-color, #666); border-radius: 24px; padding: 32px; text-align: center; }
+.pk-arceus .pk-master-head { justify-content: center; gap: 15px; border-bottom: 1px solid var(--grupo-color, #666); }
+.pk-arceus .pk-master-footer { justify-content: center; gap: 30px; }
+.pk-dialga { border-left: 10px solid var(--grupo-color, #666); border-right: 2px solid var(--grupo-color, #666); border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); border-radius: 4px; }
+.pk-palkia { border: 2px solid var(--grupo-color, #666); border-radius: 30px 6px 30px 6px; box-shadow: 6px 6px 0 0 var(--grupo-color, #666); }
+.pk-lugia { border: 1px solid var(--grupo-color, #666); outline: 1px solid var(--grupo-color, #666); outline-offset: 6px; border-radius: 14px; }
+.pk-hooh { border-top: 3px solid var(--grupo-color, #666); border-bottom: 3px solid var(--grupo-color, #666); border-left: 1px solid var(--grupo-color, #666); border-right: 1px solid var(--grupo-color, #666); border-radius: 16px; }
+.pk-mewtwo { border: 2px solid var(--grupo-color, #666); border-radius: 50px 10px 50px 10px; padding: 32px; }
+.pk-groudon { border-left: 6px double var(--grupo-color, #666); border-right: 6px double var(--grupo-color, #666); border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); border-radius: 8px; }
+.pk-kyogre { border: 3px double var(--grupo-color, #666); border-radius: 0 40px 0 40px; }
+
+/* =========================================================
+   CHATGPT PERSEUS & KELLEN — COLECCIÓN DE 20 TABLILLAS
+   ForoActivo | Diseño transparente | Color heredado
+   Estructura: Título + Búho + Post + Mención + Outfit
+   ========================================================= */
+
+/* ==================== BASE GENERAL ==================== */
+
+.pk-box {
+  width: 500px;
+  max-width: 95%;
+  margin: 25px auto;
+  padding: 28px;
+  box-sizing: border-box;
+  background: transparent;
+  color: inherit;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.pk-box *,
+.pk-box *::before,
+.pk-box *::after {
+  box-sizing: border-box;
+}
+
+.pk-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 13px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--grupo-color, currentColor);
+}
+
+.pk-title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+}
+
+.pk-owl {
+  flex-shrink: 0;
+  color: var(--grupo-color, inherit);
+  font-size: 23px;
+  line-height: 1;
+  opacity: .85;
+}
+
+.pk-owl i {
+  font-style: normal;
+}
+
+.pk-content {
+  color: inherit;
+  text-align: justify;
+  margin-bottom: 22px;
+  overflow-wrap: break-word;
+}
+
+.pk-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 15px;
+  padding-top: 13px;
+  border-top: 1px dashed var(--grupo-color, currentColor);
+  color: inherit;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  opacity: .85;
+}
+
+.pk-footer span {
   display: inline-block;
 }
 
-/* --- 01. RAYQUAZA --- */
-.pk-rayquaza {
-  border: 2px solid var(--grupo-color, #666);
-  clip-path: polygon(0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
-  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+.pk-box a {
+  color: inherit;
 }
 
-/* --- 02. GIRATINA --- */
-.pk-giratina {
-  border: 1px solid var(--grupo-color, #666);
-  outline: 2px solid var(--grupo-color, #666);
-  outline-offset: -8px;
-  border-radius: 8px;
-}
+/* ==================== 01. NIX ====================
+   Marco hexagonal doble
+   ================================================= */
 
-/* --- 03. ARCEUS --- */
-.pk-arceus {
-  border: 4px double var(--grupo-color, #666);
-  border-radius: 24px;
+.pk-nix {
+  border: 2px solid var(--grupo-color, currentColor);
+  clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);
   padding: 32px;
+}
+
+/* ==================== 02. ZEPHYR ====================
+   Esquinas abiertas
+   ================================================= */
+
+.pk-zephyr {
+  border-top: 2px solid var(--grupo-color, currentColor);
+  border-bottom: 2px solid var(--grupo-color, currentColor);
+  outline: 1px solid var(--grupo-color, currentColor);
+  outline-offset: -7px;
+  padding: 32px;
+}
+
+.pk-zephyr .pk-head {
+  border-bottom-style: dotted;
+}
+
+/* ==================== 03. AETHEL ====================
+   Marco clásico de doble línea
+   ================================================= */
+
+.pk-aethel {
+  border: 4px double var(--grupo-color, currentColor);
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.pk-aethel .pk-head {
+  border-bottom: 3px double var(--grupo-color, currentColor);
+}
+
+/* ==================== 04. VORTEX ====================
+   Marco asimétrico
+   ================================================= */
+
+.pk-vortex {
+  border: 2px solid var(--grupo-color, currentColor);
+  border-radius: 22px 0 22px 0;
+  box-shadow: 5px 5px 0 var(--grupo-color, currentColor);
+  margin-bottom: 30px;
+}
+
+/* ==================== 05. ORION ====================
+   Panel de interfaz tecnológica
+   ================================================= */
+
+.pk-orion {
+  border: 1px solid var(--grupo-color, currentColor);
+  border-left: 7px solid var(--grupo-color, currentColor);
+  padding: 28px;
+}
+
+.pk-orion::before {
+  content: '✦ ───── P E R S E U S   /   R E C O R D ───── ✦';
+  display: block;
+  margin-bottom: 15px;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-align: center;
+  opacity: .65;
+}
+
+.pk-orion .pk-title {
+  letter-spacing: 3px;
+}
+
+/* ==================== 06. ASTRAEA ====================
+   Composición celestial
+   ================================================= */
+
+.pk-astraea {
+  border-top: 4px solid var(--grupo-color, currentColor);
+  border-bottom: 4px solid var(--grupo-color, currentColor);
+  border-left: 1px dashed var(--grupo-color, currentColor);
+  border-right: 1px dashed var(--grupo-color, currentColor);
+  border-radius: 20px;
+  padding: 30px;
   text-align: center;
 }
-.pk-arceus .pk-master-head { justify-content: center; gap: 15px; border-bottom: 1px solid var(--grupo-color, #666); }
-.pk-arceus .pk-master-footer { justify-content: center; gap: 30px; }
 
-/* --- 04. DIALGA --- */
-.pk-dialga {
-  border-left: 10px solid var(--grupo-color, #666);
-  border-right: 2px solid var(--grupo-color, #666);
-  border-top: 2px solid var(--grupo-color, #666);
-  border-bottom: 2px solid var(--grupo-color, #666);
+.pk-astraea .pk-head {
+  justify-content: center;
+  border-bottom-style: double;
+}
+
+.pk-astraea .pk-content {
+  text-align: center;
+}
+
+/* ==================== 07. CAEDMON ====================
+   Placa con esquina cortada
+   ================================================= */
+
+.pk-caedmon {
+  border: 2px solid var(--grupo-color, currentColor);
   border-radius: 4px;
+  padding: 30px;
 }
 
-/* --- 05. PALKIA --- */
-.pk-palkia {
-  border: 2px solid var(--grupo-color, #666);
-  border-radius: 30px 6px 30px 6px;
-  box-shadow: 6px 6px 0 0 var(--grupo-color, #666);
+.pk-caedmon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background: var(--grupo-color, currentColor);
+  opacity: .2;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  pointer-events: none;
 }
 
-/* --- 06. LUGIA --- */
-.pk-lugia {
-  border: 1px solid var(--grupo-color, #666);
-  outline: 1px solid var(--grupo-color, #666);
-  outline-offset: 6px;
-  border-radius: 14px;
+/* ==================== 08. LYNX ====================
+   Cápsula geométrica
+   ================================================= */
+
+.pk-lynx {
+  border: 1px solid var(--grupo-color, currentColor);
+  outline: 2px dashed var(--grupo-color, currentColor);
+  outline-offset: -7px;
+  border-radius: 32px;
+  padding: 34px;
 }
 
-/* --- 07. HO-OH --- */
-.pk-hooh {
-  border-top: 3px solid var(--grupo-color, #666);
-  border-bottom: 3px solid var(--grupo-color, #666);
-  border-left: 1px solid var(--grupo-color, #666);
-  border-right: 1px solid var(--grupo-color, #666);
-  border-radius: 16px;
+.pk-lynx .pk-head {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-/* --- 08. MEWTWO --- */
-.pk-mewtwo {
-  border: 2px solid var(--grupo-color, #666);
-  border-radius: 50px 10px 50px 10px;
+/* ==================== 09. CRONOS ====================
+   Relojería y líneas de tiempo
+   ================================================= */
+
+.pk-cronos {
+  border: 2px solid var(--grupo-color, currentColor);
+  border-radius: 12px 12px 0 0;
+  box-shadow: inset 0 5px 0 var(--grupo-color, currentColor);
+  padding-top: 34px;
+}
+
+.pk-cronos .pk-head {
+  border-bottom: 2px dotted var(--grupo-color, currentColor);
+}
+
+/* ==================== 10. THALIA ====================
+   Marco orgánico
+   ================================================= */
+
+.pk-thalia {
+  border: 2px solid var(--grupo-color, currentColor);
+  border-radius: 35px 8px 35px 8px;
   padding: 32px;
 }
 
-/* --- 09. GROUDON --- */
-.pk-groudon {
-  border-left: 6px double var(--grupo-color, #666);
-  border-right: 6px double var(--grupo-color, #666);
-  border-top: 2px solid var(--grupo-color, #666);
-  border-bottom: 2px solid var(--grupo-color, #666);
-  border-radius: 8px;
+.pk-thalia .pk-title {
+  letter-spacing: 1.8px;
 }
 
-/* --- 10. KYOGRE --- */
-.pk-kyogre {
-  border: 3px double var(--grupo-color, #666);
-  border-radius: 0 40px 0 40px;
+/* ==================== 11. OBERON ====================
+   Marco gótico
+   ================================================= */
+
+.pk-oberon {
+  border: 1px solid var(--grupo-color, currentColor);
+  outline: 1px solid var(--grupo-color, currentColor);
+  outline-offset: 6px;
+  padding: 32px;
+  margin: 32px auto;
+}
+
+.pk-oberon .pk-head {
+  border-bottom: 3px double var(--grupo-color, currentColor);
+}
+
+.pk-oberon .pk-title {
+  font-family: Georgia, serif;
+  letter-spacing: 3px;
+}
+
+/* ==================== 12. VALERIA ====================
+   Sello estampado
+   ================================================= */
+
+.pk-valeria {
+  border: 2px dashed var(--grupo-color, currentColor);
+  border-radius: 14px;
+  text-align: center;
+  padding: 32px;
+}
+
+.pk-valeria .pk-head {
+  justify-content: center;
+  border-bottom: 1px dashed var(--grupo-color, currentColor);
+}
+
+.pk-valeria .pk-content {
+  text-align: center;
+}
+
+/* ==================== 13. KASSANDRA ====================
+   Doble columna lateral
+   ================================================= */
+
+.pk-kassandra {
+  border-left: 7px double var(--grupo-color, currentColor);
+  border-right: 1px solid var(--grupo-color, currentColor);
+  border-top: 1px solid var(--grupo-color, currentColor);
+  border-bottom: 1px solid var(--grupo-color, currentColor);
+  padding: 30px;
+}
+
+/* ==================== 14. IGNIS ====================
+   Flujo de energía
+   ================================================= */
+
+.pk-ignis {
+  border-top: 3px solid var(--grupo-color, currentColor);
+  border-bottom: 3px solid var(--grupo-color, currentColor);
+  border-left: 1px solid var(--grupo-color, currentColor);
+  border-right: 1px solid var(--grupo-color, currentColor);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.pk-ignis .pk-head {
+  border-bottom: 2px solid var(--grupo-color, currentColor);
+}
+
+/* ==================== 15. SILVAN ====================
+   Retícula de bosque
+   ================================================= */
+
+.pk-silvan {
+  border: 1px solid var(--grupo-color, currentColor);
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 var(--grupo-color, currentColor);
+  padding: 32px;
+}
+
+.pk-silvan .pk-head {
+  border-bottom: 1px dotted var(--grupo-color, currentColor);
+}
+
+/* ==================== 16. MORRIGAN ====================
+   Corte diagonal
+   ================================================= */
+
+.pk-morrigan {
+  border: 2px solid var(--grupo-color, currentColor);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 22px), calc(100% - 22px) 100%, 0 100%);
+  padding: 32px;
+}
+
+/* ==================== 17. ALTAIR ====================
+   Constelación
+   ================================================= */
+
+.pk-altair {
+  border: 1px solid var(--grupo-color, currentColor);
+  outline: 2px dotted var(--grupo-color, currentColor);
+  outline-offset: -6px;
+  padding: 32px;
+}
+
+.pk-altair .pk-title {
+  letter-spacing: 4px;
+}
+
+/* ==================== 18. SELENE ====================
+   Cápsula lunar
+   ================================================= */
+
+.pk-selene {
+  border: 3px double var(--grupo-color, currentColor);
+  border-radius: 40px;
+  padding: 34px;
+}
+
+.pk-selene .pk-head {
+  border-bottom-style: double;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* ==================== 19. DRACO ====================
+   Armadura angular
+   ================================================= */
+
+.pk-draco {
+  border: 2px solid var(--grupo-color, currentColor);
+  border-radius: 0 28px 0 28px;
+  padding: 30px;
+  box-shadow: inset 0 0 0 4px transparent;
+}
+
+.pk-draco .pk-head {
+  border-bottom: 2px solid var(--grupo-color, currentColor);
+}
+
+/* ==================== 20. PERSEUS ====================
+   El sello del defensor
+   ================================================= */
+
+.pk-perseus {
+  border: 2px solid var(--grupo-color, currentColor);
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px var(--grupo-color, currentColor);
+  padding: 32px;
+}
+
+.pk-perseus .pk-head {
+  border-bottom: 3px double var(--grupo-color, currentColor);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media screen and (max-width: 550px) {
+  .pk-box {
+    width: 95%;
+    padding: 22px;
+  }
+
+  .pk-title {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .pk-footer {
+    font-size: 8px;
+  }
+
+  .pk-owl {
+    font-size: 20px;
+  }
 }
