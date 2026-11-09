@@ -1,173 +1,242 @@
 /* =========================================================
-   PERSEUS & KELLEN - 20 TABLILLAS DE ROL AVANZADAS
-   Alojamiento: GitHub Repository (TheCreyds/Perseus-Kellen)
+   CREYDS & KELLEN - 20 TABLILLAS DECORADAS Y ORIGINALES
+   Estructura: Título, Post Rol, Cuadro de Interacción (Mención y Outfit)
    ========================================================= */
 
-/* Estructura Base de la Tablilla */
+/* Base General */
 .pk-box {
-  width: 540px;
+  width: 500px;
   max-width: 95%;
   margin: 25px auto;
-  padding: 30px;
+  padding: 25px;
   box-sizing: border-box;
-  background: rgba(12, 12, 14, 0.85);
-  backdrop-filter: blur(8px);
+  background: transparent;
   color: inherit;
-  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
-  font-size: 13.5px;
-  line-height: 1.8;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 13px;
+  line-height: 1.75;
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
 }
 
-/* Cabecera y Título */
 .pk-head {
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 2;
-}
-
-.pk-tag {
-  display: inline-block;
-  font-size: 9.5px;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: 4px;
-  background: var(--grupo-color, rgba(255, 255, 255, 0.08));
-  border: 1px solid var(--grupo-color, rgba(255, 255, 255, 0.2));
-  color: inherit;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--grupo-color, #666);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .pk-title {
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 1.25;
-  letter-spacing: 2px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--grupo-color, inherit);
-  margin: 0 0 8px 0;
 }
 
-/* Cuerpo del Post de Rol */
-.pk-text {
+.pk-owl {
+  font-size: 16px;
+  color: var(--grupo-color, inherit);
+  opacity: 0.85;
+}
+
+.pk-content {
   text-align: justify;
-  position: relative;
-  z-index: 2;
-  margin-bottom: 25px;
-  opacity: 0.95;
+  margin-bottom: 18px;
 }
 
-/* Cuadro Final de Interacción (Mención y Outfit) */
-.pk-interaction {
-  position: relative;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.4);
-  border-left: 3px solid var(--grupo-color, currentColor);
-  padding: 14px 18px;
-  font-size: 12px;
+.pk-footer {
+  border-top: 1px dashed var(--grupo-color, #666);
+  padding-top: 12px;
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  border-radius: 0 6px 6px 0;
-}
-
-.pk-interaction span {
+  justify-content: space-between;
+  font-size: 10px;
   font-weight: 700;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--grupo-color, inherit);
+  opacity: 0.85;
 }
 
-/* =========================================================
-   20 DISEÑOS ÚNICOS Y CREATIVOS
-   ========================================================= */
+/* --- 01. NIX (Marco Hexagonal Doble) --- */
+.pk-nix {
+  border: 2px solid var(--grupo-color, #666);
+  clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);
+  padding: 30px;
+}
 
-/* 1. Estilo Búho Nocturno (Neón Clásico) */
-.pk-style-1 { border: 2px solid var(--grupo-color, currentColor); box-shadow: 0 0 20px rgba(0,0,0,0.6); }
-.pk-style-1 .pk-owl { position: absolute; top: 15px; right: 20px; font-size: 18px; color: var(--grupo-color, currentColor); opacity: 0.8; }
+/* --- 02. ZEPHYR (Esquinas Abiertas y Cruzadas) --- */
+.pk-zephyr {
+  border-top: 2px solid var(--grupo-color, #666);
+  border-bottom: 2px solid var(--grupo-color, #666);
+  outline: 1px solid var(--grupo-color, #666);
+  outline-offset: -6px;
+  padding: 28px;
+}
 
-/* 2. Estilo Minimalista de Línea Superior */
-.pk-style-2 { border-top: 5px solid var(--grupo-color, currentColor); border-left: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
-.pk-style-2 .pk-owl { display: block; text-align: right; font-size: 16px; margin-bottom: 5px; color: var(--grupo-color, currentColor); }
+/* --- 03. AETHEL (Borde Doble Punteado e Intercalado) --- */
+.pk-aethel {
+  border: 4px double var(--grupo-color, #666);
+  border-radius: 16px;
+  padding: 28px;
+}
 
-/* 3. Estilo Doble Marco Biselado */
-.pk-style-3 { border: 1px solid var(--grupo-color, currentColor); outline: 2px solid var(--grupo-color, currentColor); outline-offset: -6px; }
-.pk-style-3 .pk-owl { position: absolute; bottom: 20px; right: 25px; font-size: 22px; opacity: 0.15; color: var(--grupo-color, currentColor); pointer-events: none; }
+/* --- 04. VORTEX (Asimétrico Filoso) --- */
+.pk-vortex {
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 20px 0 20px 0;
+  padding: 28px;
+  box-shadow: 5px 5px 0 0 var(--grupo-color, #666);
+}
 
-/* 4. Estilo Escudo Lateral Izquierdo */
-.pk-style-4 { border-left: 10px solid var(--grupo-color, currentColor); border-top: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
-.pk-style-4 .pk-owl { position: absolute; top: 20px; right: 20px; font-size: 15px; color: var(--grupo-color, currentColor); }
+/* --- 05. ORION (Panel HUD Técnico con Retículas) --- */
+.pk-orion {
+  border: 1px solid var(--grupo-color, #666);
+  border-left: 8px solid var(--grupo-color, #666);
+  padding: 26px;
+}
+.pk-orion::before {
+  content: '✦ ─── SYSTEM_ID ─── ✦';
+  display: block;
+  font-size: 8px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  opacity: 0.7;
+}
 
-/* 5. Estilo Esquina Cortada Tecnológica (Polygon) */
-.pk-style-5 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%); }
-.pk-style-5 .pk-owl { position: absolute; bottom: 15px; left: 20px; font-size: 16px; color: var(--grupo-color, currentColor); opacity: 0.7; }
+/* --- 06. ASTRAEA (Arco Celestial y Doble Línea) --- */
+.pk-astraea {
+  border-top: 4px solid var(--grupo-color, #666);
+  border-bottom: 4px solid var(--grupo-color, #666);
+  border-left: 1px dashed var(--grupo-color, #666);
+  border-right: 1px dashed var(--grupo-color, #666);
+  border-radius: 20px;
+  padding: 28px;
+  text-align: center;
+}
+.pk-astraea .pk-head { justify-content: center; gap: 15px; }
 
-/* 6. Estilo Pergamino Hacker con Sombra Glow */
-.pk-style-6 { border: 1px solid var(--grupo-color, currentColor); box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 0 15px var(--grupo-color, rgba(255,255,255,0.1)); }
-.pk-style-6 .pk-owl { display: inline-block; margin-right: 8px; color: var(--grupo-color, currentColor); }
+/* --- 07. CAEDMON (Placa de Bronce con Muesca) --- */
+.pk-caedmon {
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 4px;
+  padding: 28px;
+  position: relative;
+}
+.pk-caedmon::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; width: 30px; height: 30px;
+  background: var(--grupo-color, #666);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
 
-/* 7. Estilo Tarjeta Flotante con Divisor Punteado */
-.pk-style-7 { border: 2px dashed var(--grupo-color, currentColor); border-radius: 14px; }
-.pk-style-7 .pk-head { border-bottom: 1px dashed var(--grupo-color, currentColor); padding-bottom: 12px; }
-.pk-style-7 .pk-owl { position: absolute; top: 12px; right: 20px; font-size: 16px; color: var(--grupo-color, currentColor); }
+/* --- 08. LYNX (Cápsula de Viento Geométrica) --- */
+.pk-lynx {
+  border: 1px solid var(--grupo-color, #666);
+  outline: 2px dashed var(--grupo-color, #666);
+  outline-offset: -6px;
+  border-radius: 30px;
+  padding: 30px;
+}
 
-/* 8. Estilo Terminal Ciberespacial */
-.pk-style-8 { border-top: 3px solid var(--grupo-color, currentColor); border-bottom: 3px solid var(--grupo-color, currentColor); background: rgba(5, 5, 8, 0.95); }
-.pk-style-8 .pk-owl { position: absolute; top: 8px; right: 15px; font-size: 14px; color: var(--grupo-color, currentColor); }
+/* --- 09. CRONOS (Relojería y Vectores Cruzados) --- */
+.pk-cronos {
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 12px 12px 0 0;
+  padding: 28px;
+  box-shadow: inset 0 2px 0 0 var(--grupo-color, #666);
+}
 
-/* 9. Estilo Alquimia Geométrica */
-.pk-style-9 { border: 1px solid var(--grupo-color, currentColor); outline: 1px dashed var(--grupo-color, currentColor); outline-offset: -8px; }
-.pk-style-9 .pk-owl { display: block; text-align: center; font-size: 20px; margin-bottom: 10px; color: var(--grupo-color, currentColor); }
+/* --- 10. THALIA (Borde Orgánico Ondulado/Curvo) --- */
+.pk-thalia {
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 24px 8px 24px 8px;
+  padding: 28px;
+}
 
-/* 10. Estilo Espejo Dual Lateral */
-.pk-style-10 { border-left: 4px solid var(--grupo-color, currentColor); border-right: 4px solid var(--grupo-color, currentColor); border-radius: 6px; }
-.pk-style-10 .pk-owl { position: absolute; bottom: 20px; right: 20px; font-size: 18px; color: var(--grupo-color, currentColor); opacity: 0.6; }
+/* --- 11. OBERON (Gótico Geométrico Avanzado) --- */
+.pk-oberon {
+  border: 1px solid var(--grupo-color, #666);
+  outline: 1px solid var(--grupo-color, #666);
+  outline-offset: 6px;
+  padding: 28px;
+}
 
-/* 11. Estilo Minimalista con Sello de Agua de Búho */
-.pk-style-11 { border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; }
-.pk-style-11 .pk-owl { position: absolute; right: -10px; bottom: -10px; font-size: 90px; opacity: 0.04; color: var(--grupo-color, currentColor); pointer-events: none; }
+/* --- 12. VALERIA (Sello Estampado Vectorial) --- */
+.pk-valeria {
+  border: 2px dashed var(--grupo-color, #666);
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+}
+.pk-valeria .pk-head { justify-content: center; gap: 15px; }
 
-/* 12. Estilo Monolito Oscuro con Línea Central */
-.pk-style-12 { border: 2px solid var(--grupo-color, currentColor); border-radius: 20px; }
-.pk-style-12 .pk-head { text-align: center; border-bottom: 1px solid var(--grupo-color, currentColor); padding-bottom: 14px; }
-.pk-style-12 .pk-owl { display: block; margin: 0 auto 8px auto; font-size: 20px; color: var(--grupo-color, currentColor); }
+/* --- 13. KASSANDRA (Estructura de Doble Columna Inclinada) --- */
+.pk-kassandra {
+  border-left: 6px double var(--grupo-color, #666);
+  border-right: 1px solid var(--grupo-color, #666);
+  border-top: 1px solid var(--grupo-color, #666);
+  border-bottom: 1px solid var(--grupo-color, #666);
+  padding: 28px;
+}
 
-/* 13. Estilo Vanguardia Asimétrica */
-.pk-style-13 { border-top: 2px solid var(--grupo-color, currentColor); border-left: 6px solid var(--grupo-color, currentColor); }
-.pk-style-13 .pk-owl { position: absolute; top: 15px; right: 20px; font-size: 16px; color: var(--grupo-color, currentColor); }
+/* --- 14. IGNIS (Flujo de Energía Térmica) --- */
+.pk-ignis {
+  border-top: 2px solid var(--grupo-color, #666);
+  border-bottom: 2px solid var(--grupo-color, #666);
+  border-left: 3px solid var(--grupo-color, #666);
+  border-right: 3px solid var(--grupo-color, #666);
+  border-radius: 8px;
+  padding: 28px;
+}
 
-/* 14. Estilo Códice Ancestral */
-.pk-style-14 { border: 3px double var(--grupo-color, currentColor); padding: 32px; }
-.pk-style-14 .pk-owl { position: absolute; top: 18px; right: 22px; font-size: 16px; color: var(--grupo-color, currentColor); }
+/* --- 15. SILVAN (Retícula de Bosque Táctico) --- */
+.pk-silvan {
+  border: 1px solid var(--grupo-color, #666);
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 4px 4px 0 0 var(--grupo-color, #666);
+}
 
-/* 15. Estilo Red Táctica Militar */
-.pk-style-15 { border: 1px solid var(--grupo-color, currentColor); box-shadow: inset 0 0 10px var(--grupo-color, rgba(255,255,255,0.05)); }
-.pk-style-15 .pk-owl { display: inline-block; float: right; font-size: 16px; color: var(--grupo-color, currentColor); }
+/* --- 16. MORRIGAN (Corte Diagonal de Sombra) --- */
+.pk-morrigan {
+  border: 2px solid var(--grupo-color, #666);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  padding: 28px;
+}
 
-/* 16. Estilo Destello Sutil con Esquina Redondeada */
-.pk-style-16 { border: 1px solid var(--grupo-color, currentColor); border-radius: 30px 4px 30px 4px; }
-.pk-style-16 .pk-owl { position: absolute; bottom: 15px; right: 25px; font-size: 18px; color: var(--grupo-color, currentColor); opacity: 0.7; }
+/* --- 17. ALTAIR (Constelación Estelar) --- */
+.pk-altair {
+  border: 1px solid var(--grupo-color, #666);
+  outline: 2px dotted var(--grupo-color, #666);
+  outline-offset: -5px;
+  padding: 28px;
+}
 
-/* 17. Estilo Panel Flotante de Alta Gama */
-.pk-style-17 { border-left: 2px solid var(--grupo-color, currentColor); border-bottom: 2px solid var(--grupo-color, currentColor); }
-.pk-style-17 .pk-owl { position: absolute; top: 20px; right: 20px; font-size: 17px; color: var(--grupo-color, currentColor); }
+/* --- 18. SELENE (Cápsula Lunar Doble) --- */
+.pk-selene {
+  border: 3px double var(--grupo-color, #666);
+  border-radius: 40px;
+  padding: 30px;
+}
 
-/* 18. Estilo Prisma Gótico */
-.pk-style-18 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px)); }
-.pk-style-18 .pk-owl { position: absolute; bottom: 18px; left: 20px; font-size: 16px; color: var(--grupo-color, currentColor); }
+/* --- 19. DRACO (Armadura de Dragón Vectorial) --- */
+.pk-draco {
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 0 25px 0 25px;
+  padding: 28px;
+}
 
-/* 19. Estilo Marco de Élite con Doble Sombra */
-.pk-style-19 { border: 1px solid var(--grupo-color, currentColor); box-shadow: 0 4px 20px rgba(0,0,0,0.7), inset 0 0 10px rgba(255,255,255,0.05); }
-.pk-style-19 .pk-owl { display: block; text-align: right; font-size: 18px; margin-top: -10px; color: var(--grupo-color, currentColor); }
-
-/* 20. Estilo Supremo Perseus & Kellen */
-.pk-style-20 { border: 2px solid var(--grupo-color, currentColor); border-radius: 12px; background: rgba(15, 15, 20, 0.9); }
-.pk-style-20 .pk-head { border-bottom: 1px dashed var(--grupo-color, currentColor); padding-bottom: 12px; }
-.pk-style-20 .pk-owl { position: absolute; top: 18px; right: 20px; font-size: 18px; color: var(--grupo-color, currentColor); }
+/* --- 20. PERSEUS (El Sello del Defensor) --- */
+.pk-perseus {
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15), inset 0 0 0 1px var(--grupo-color, #666);
+}
 
 /* ==========================================
    PERSEUS KELLEN — ROLEPLAY TABLETS
