@@ -1,116 +1,170 @@
 /* =========================================================
-   PERSEUS-KELLEN - 20 TABLILLAS DE ROL CREATIVAS (EXTERNO)
+   PERSEUS & KELLEN - 20 TABLILLAS DE ROL AVANZADAS
+   Alojamiento: GitHub Repository (TheCreyds/Perseus-Kellen)
    ========================================================= */
 
+/* Estructura Base de la Tablilla */
 .pk-box {
-  width: 550px;
+  width: 540px;
   max-width: 95%;
   margin: 25px auto;
-  padding: 28px;
+  padding: 30px;
   box-sizing: border-box;
-  background: transparent;
+  background: rgba(12, 12, 14, 0.85);
+  backdrop-filter: blur(8px);
   color: inherit;
   font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
-  font-size: 13px;
-  line-height: 1.75;
+  font-size: 13.5px;
+  line-height: 1.8;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 
+/* Cabecera y Título */
 .pk-head {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   position: relative;
   z-index: 2;
 }
 
 .pk-tag {
   display: inline-block;
-  font-size: 9px;
+  font-size: 9.5px;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 3px;
-  background: var(--grupo-color, currentColor);
-  border: 1px solid var(--grupo-color, currentColor);
-  color: #fff;
-  margin-bottom: 8px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: var(--grupo-color, rgba(255, 255, 255, 0.08));
+  border: 1px solid var(--grupo-color, rgba(255, 255, 255, 0.2));
+  color: inherit;
+  margin-bottom: 10px;
 }
 
 .pk-title {
   font-size: 21px;
-  font-weight: 800;
-  line-height: 1.2;
+  font-weight: 900;
+  line-height: 1.25;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--grupo-color, inherit);
   margin: 0 0 8px 0;
 }
 
-.pk-sub {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  opacity: 0.8;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
+/* Cuerpo del Post de Rol */
 .pk-text {
   text-align: justify;
   position: relative;
   z-index: 2;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  opacity: 0.95;
 }
 
-.pk-footer {
-  margin-top: 18px;
-  padding-top: 12px;
-  border-top: 1px dashed var(--grupo-color, currentColor);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  opacity: 0.9;
-  z-index: 2;
+/* Cuadro Final de Interacción (Mención y Outfit) */
+.pk-interaction {
   position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4);
+  border-left: 3px solid var(--grupo-color, currentColor);
+  padding: 14px 18px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-radius: 0 6px 6px 0;
 }
 
-.pk-footer span {
+.pk-interaction span {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   color: var(--grupo-color, inherit);
 }
 
-/* --- 20 DISEÑOS ÚNICOS --- */
-.pk-t1 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%); }
-.pk-t1::before { content: '🦉'; position: absolute; top: 10px; right: 15px; font-size: 14px; opacity: 0.7; }
-.pk-t2 { border: 1px solid var(--grupo-color, currentColor); outline: 2px solid var(--grupo-color, currentColor); outline-offset: -7px; padding: 34px; }
-.pk-t2 .pk-footer { border-top: 2px double var(--grupo-color, currentColor); }
-.pk-t3 { border-left: 6px solid var(--grupo-color, currentColor); border-right: 1px solid var(--grupo-color, currentColor); border-top: 1px solid var(--grupo-color, currentColor); border-bottom: 1px solid var(--grupo-color, currentColor); border-radius: 8px; }
-.pk-t4 { border: 2px solid var(--grupo-color, currentColor); border-radius: 18px; box-shadow: 0 0 15px rgba(0,0,0,0.15); }
-.pk-t4 .pk-title { text-shadow: 0 0 8px var(--grupo-color, currentColor); }
-.pk-t5 { border: 2px solid var(--grupo-color, currentColor); border-left: 10px solid var(--grupo-color, currentColor); border-radius: 4px; }
-.pk-t6 { border: 3px double var(--grupo-color, currentColor); border-radius: 20px; text-align: center; }
-.pk-t6 .pk-sub, .pk-t6 .pk-footer { justify-content: center; }
-.pk-t7 { border: 1px solid var(--grupo-color, currentColor); border-radius: 14px; box-shadow: inset 0 0 12px rgba(0,0,0,0.08); }
-.pk-t7::before { content: '<i class="icond-perseus2"></i>'; position: absolute; top: 12px; right: 18px; color: var(--grupo-color, currentColor); }
-.pk-t8 { border: 2px solid var(--grupo-color, currentColor); border-radius: 2px; }
-.pk-t9 { border-top: 3px solid var(--grupo-color, currentColor); border-bottom: 3px solid var(--grupo-color, currentColor); border-left: 1px solid var(--grupo-color, currentColor); border-right: 1px solid var(--grupo-color, currentColor); font-family: monospace; }
-.pk-t10 { border: 3px double var(--grupo-color, currentColor); border-radius: 16px; }
-.pk-t11 { border: 2px solid var(--grupo-color, currentColor); border-radius: 6px; text-align: center; }
-.pk-t11 .pk-sub, .pk-t11 .pk-footer { justify-content: center; }
-.pk-t12 { border: 2px solid var(--grupo-color, currentColor); border-radius: 20px 0 20px 0; }
-.pk-t13 { border: 1px solid var(--grupo-color, currentColor); outline: 2px solid var(--grupo-color, currentColor); outline-offset: -5px; padding: 30px; }
-.pk-t14 { border: 2px solid var(--grupo-color, currentColor); border-radius: 24px; box-shadow: 0 0 18px rgba(0,0,0,0.18); }
-.pk-t15 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px)); }
-.pk-t16 { border: 1px dashed var(--grupo-color, currentColor); padding: 32px; }
-.pk-t17 { border-radius: 40px; border: 1px solid var(--grupo-color, currentColor); box-shadow: inset 0 0 0 1px var(--grupo-color, currentColor); padding: 32px; text-align: center; }
-.pk-t17 .pk-sub, .pk-t17 .pk-footer { justify-content: center; }
-.pk-t18 { border: 1px solid var(--grupo-color, currentColor); padding: 32px 24px; font-family: monospace; }
-.pk-t19 { border: 1px solid var(--grupo-color, currentColor); outline: 1px dashed var(--grupo-color, currentColor); outline-offset: -8px; padding: 32px; text-align: center; }
-.pk-t19 .pk-sub, .pk-t19 .pk-footer { justify-content: center; }
-.pk-t20 { border: 1px solid var(--grupo-color, currentColor); clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px); }
+/* =========================================================
+   20 DISEÑOS ÚNICOS Y CREATIVOS
+   ========================================================= */
+
+/* 1. Estilo Búho Nocturno (Neón Clásico) */
+.pk-style-1 { border: 2px solid var(--grupo-color, currentColor); box-shadow: 0 0 20px rgba(0,0,0,0.6); }
+.pk-style-1 .pk-owl { position: absolute; top: 15px; right: 20px; font-size: 18px; color: var(--grupo-color, currentColor); opacity: 0.8; }
+
+/* 2. Estilo Minimalista de Línea Superior */
+.pk-style-2 { border-top: 5px solid var(--grupo-color, currentColor); border-left: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
+.pk-style-2 .pk-owl { display: block; text-align: right; font-size: 16px; margin-bottom: 5px; color: var(--grupo-color, currentColor); }
+
+/* 3. Estilo Doble Marco Biselado */
+.pk-style-3 { border: 1px solid var(--grupo-color, currentColor); outline: 2px solid var(--grupo-color, currentColor); outline-offset: -6px; }
+.pk-style-3 .pk-owl { position: absolute; bottom: 20px; right: 25px; font-size: 22px; opacity: 0.15; color: var(--grupo-color, currentColor); pointer-events: none; }
+
+/* 4. Estilo Escudo Lateral Izquierdo */
+.pk-style-4 { border-left: 10px solid var(--grupo-color, currentColor); border-top: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
+.pk-style-4 .pk-owl { position: absolute; top: 20px; right: 20px; font-size: 15px; color: var(--grupo-color, currentColor); }
+
+/* 5. Estilo Esquina Cortada Tecnológica (Polygon) */
+.pk-style-5 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%); }
+.pk-style-5 .pk-owl { position: absolute; bottom: 15px; left: 20px; font-size: 16px; color: var(--grupo-color, currentColor); opacity: 0.7; }
+
+/* 6. Estilo Pergamino Hacker con Sombra Glow */
+.pk-style-6 { border: 1px solid var(--grupo-color, currentColor); box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 0 15px var(--grupo-color, rgba(255,255,255,0.1)); }
+.pk-style-6 .pk-owl { display: inline-block; margin-right: 8px; color: var(--grupo-color, currentColor); }
+
+/* 7. Estilo Tarjeta Flotante con Divisor Punteado */
+.pk-style-7 { border: 2px dashed var(--grupo-color, currentColor); border-radius: 14px; }
+.pk-style-7 .pk-head { border-bottom: 1px dashed var(--grupo-color, currentColor); padding-bottom: 12px; }
+.pk-style-7 .pk-owl { position: absolute; top: 12px; right: 20px; font-size: 16px; color: var(--grupo-color, currentColor); }
+
+/* 8. Estilo Terminal Ciberespacial */
+.pk-style-8 { border-top: 3px solid var(--grupo-color, currentColor); border-bottom: 3px solid var(--grupo-color, currentColor); background: rgba(5, 5, 8, 0.95); }
+.pk-style-8 .pk-owl { position: absolute; top: 8px; right: 15px; font-size: 14px; color: var(--grupo-color, currentColor); }
+
+/* 9. Estilo Alquimia Geométrica */
+.pk-style-9 { border: 1px solid var(--grupo-color, currentColor); outline: 1px dashed var(--grupo-color, currentColor); outline-offset: -8px; }
+.pk-style-9 .pk-owl { display: block; text-align: center; font-size: 20px; margin-bottom: 10px; color: var(--grupo-color, currentColor); }
+
+/* 10. Estilo Espejo Dual Lateral */
+.pk-style-10 { border-left: 4px solid var(--grupo-color, currentColor); border-right: 4px solid var(--grupo-color, currentColor); border-radius: 6px; }
+.pk-style-10 .pk-owl { position: absolute; bottom: 20px; right: 20px; font-size: 18px; color: var(--grupo-color, currentColor); opacity: 0.6; }
+
+/* 11. Estilo Minimalista con Sello de Agua de Búho */
+.pk-style-11 { border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; }
+.pk-style-11 .pk-owl { position: absolute; right: -10px; bottom: -10px; font-size: 90px; opacity: 0.04; color: var(--grupo-color, currentColor); pointer-events: none; }
+
+/* 12. Estilo Monolito Oscuro con Línea Central */
+.pk-style-12 { border: 2px solid var(--grupo-color, currentColor); border-radius: 20px; }
+.pk-style-12 .pk-head { text-align: center; border-bottom: 1px solid var(--grupo-color, currentColor); padding-bottom: 14px; }
+.pk-style-12 .pk-owl { display: block; margin: 0 auto 8px auto; font-size: 20px; color: var(--grupo-color, currentColor); }
+
+/* 13. Estilo Vanguardia Asimétrica */
+.pk-style-13 { border-top: 2px solid var(--grupo-color, currentColor); border-left: 6px solid var(--grupo-color, currentColor); }
+.pk-style-13 .pk-owl { position: absolute; top: 15px; right: 20px; font-size: 16px; color: var(--grupo-color, currentColor); }
+
+/* 14. Estilo Códice Ancestral */
+.pk-style-14 { border: 3px double var(--grupo-color, currentColor); padding: 32px; }
+.pk-style-14 .pk-owl { position: absolute; top: 18px; right: 22px; font-size: 16px; color: var(--grupo-color, currentColor); }
+
+/* 15. Estilo Red Táctica Militar */
+.pk-style-15 { border: 1px solid var(--grupo-color, currentColor); box-shadow: inset 0 0 10px var(--grupo-color, rgba(255,255,255,0.05)); }
+.pk-style-15 .pk-owl { display: inline-block; float: right; font-size: 16px; color: var(--grupo-color, currentColor); }
+
+/* 16. Estilo Destello Sutil con Esquina Redondeada */
+.pk-style-16 { border: 1px solid var(--grupo-color, currentColor); border-radius: 30px 4px 30px 4px; }
+.pk-style-16 .pk-owl { position: absolute; bottom: 15px; right: 25px; font-size: 18px; color: var(--grupo-color, currentColor); opacity: 0.7; }
+
+/* 17. Estilo Panel Flotante de Alta Gama */
+.pk-style-17 { border-left: 2px solid var(--grupo-color, currentColor); border-bottom: 2px solid var(--grupo-color, currentColor); }
+.pk-style-17 .pk-owl { position: absolute; top: 20px; right: 20px; font-size: 17px; color: var(--grupo-color, currentColor); }
+
+/* 18. Estilo Prisma Gótico */
+.pk-style-18 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px)); }
+.pk-style-18 .pk-owl { position: absolute; bottom: 18px; left: 20px; font-size: 16px; color: var(--grupo-color, currentColor); }
+
+/* 19. Estilo Marco de Élite con Doble Sombra */
+.pk-style-19 { border: 1px solid var(--grupo-color, currentColor); box-shadow: 0 4px 20px rgba(0,0,0,0.7), inset 0 0 10px rgba(255,255,255,0.05); }
+.pk-style-19 .pk-owl { display: block; text-align: right; font-size: 18px; margin-top: -10px; color: var(--grupo-color, currentColor); }
+
+/* 20. Estilo Supremo Perseus & Kellen */
+.pk-style-20 { border: 2px solid var(--grupo-color, currentColor); border-radius: 12px; background: rgba(15, 15, 20, 0.9); }
+.pk-style-20 .pk-head { border-bottom: 1px dashed var(--grupo-color, currentColor); padding-bottom: 12px; }
+.pk-style-20 .pk-owl { position: absolute; top: 18px; right: 20px; font-size: 18px; color: var(--grupo-color, currentColor); }
