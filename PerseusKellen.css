@@ -300,3 +300,103 @@ body.skin2 .ps-cap {
   border-radius: 14px 3px 14px 3px;
   border: 1px solid rgba(139, 92, 246, 0.2);
 }
+/* ========== VARIANTES NUEVAS ========== */
+
+/* 02 - Más redondeada */
+.perseus-box.v2 {
+  border-radius: 16px;
+  border-color: #7c3aed;
+}
+.perseus-box.v2 .perseus-inner {
+  border-radius: 12px;
+  border-color: #a78bfa;
+}
+
+/* 03 - Acento lateral */
+.perseus-box.v3 {
+  border: none;
+  border-left: 5px solid #8b5cf6;
+  border-radius: 0 10px 10px 0;
+  box-shadow: none;
+  padding: 20px 25px 20px 22px;
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.08), transparent 60%);
+}
+.perseus-box.v3 .perseus-inner {
+  border: none;
+  padding: 0;
+}
+
+/* 04 - Doble borde suave */
+.perseus-box.v4 {
+  border: 1px solid #a78bfa;
+  padding: 8px;
+  border-radius: 12px;
+}
+.perseus-box.v4 .perseus-inner {
+  border: 1px solid #7c3aed;
+  border-radius: 8px;
+}
+
+/* 05 - Sombra más marcada */
+.perseus-box.v5 {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.3), 0 15px 35px rgba(109, 40, 217, 0.2);
+  border-radius: 14px;
+}
+
+/* 06 - Línea superior gruesa */
+.perseus-box.v6 {
+  border: none;
+  border-top: 4px solid #8b5cf6;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 25px 20px 20px;
+}
+.perseus-box.v6 .perseus-inner {
+  border: none;
+  padding: 0;
+}
+
+/* 07 - Estilo tarjeta */
+.perseus-box.v7 {
+  border: 1px solid #8b5cf6;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(109, 40, 217, 0.15);
+  padding: 6px;
+}
+.perseus-box.v7 .perseus-inner {
+  border: none;
+  border-radius: 9px;
+}
+
+/* 08 - Marco interrumpido */
+.perseus-box.v8 {
+  border: 2px dashed #8b5cf6;
+  border-radius: 10px;
+  box-shadow: none;
+}
+.perseus-box.v8 .perseus-inner {
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+/* 09 - Asimétrico */
+.perseus-box.v9 {
+  border-radius: 20px 6px 20px 6px;
+  border-color: #8b5cf6;
+}
+.perseus-box.v9 .perseus-inner {
+  border-radius: 16px 3px 16px 3px;
+}
+
+/* 10 - Minimal con borde inferior */
+.perseus-box.v10 {
+  border: none;
+  border-bottom: 2px solid #8b5cf6;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 15px 5px 20px;
+}
+.perseus-box.v10 .perseus-inner {
+  border: none;
+  padding: 0;
+}
