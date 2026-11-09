@@ -1,9 +1,7 @@
 /* =========================================================
-   PERSEUS-KELLEN - 20 TABLILLAS DE ROL CREATIVAS
-   Fondo transparente / Herencia de color de grupo
+   PERSEUS-KELLEN - 20 TABLILLAS DE ROL CREATIVAS (EXTERNO)
    ========================================================= */
 
-/* Estructura Base Común */
 .pk-box {
   width: 550px;
   max-width: 95%;
@@ -68,7 +66,6 @@
   margin-bottom: 20px;
 }
 
-/* Cuadro de Interacción Final */
 .pk-footer {
   margin-top: 18px;
   padding-top: 12px;
@@ -89,71 +86,31 @@
 }
 
 /* --- 20 DISEÑOS ÚNICOS --- */
-
-/* 1. HUD Táctico Búho */
 .pk-t1 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%); }
 .pk-t1::before { content: '🦉'; position: absolute; top: 10px; right: 15px; font-size: 14px; opacity: 0.7; }
-
-/* 2. Marco Doble Biselado */
 .pk-t2 { border: 1px solid var(--grupo-color, currentColor); outline: 2px solid var(--grupo-color, currentColor); outline-offset: -7px; padding: 34px; }
 .pk-t2 .pk-footer { border-top: 2px double var(--grupo-color, currentColor); }
-
-/* 3. Escudo Lateral Orgánico */
 .pk-t3 { border-left: 6px solid var(--grupo-color, currentColor); border-right: 1px solid var(--grupo-color, currentColor); border-top: 1px solid var(--grupo-color, currentColor); border-bottom: 1px solid var(--grupo-color, currentColor); border-radius: 8px; }
-
-/* 4. Núcleo Cósmico con Sombra */
 .pk-t4 { border: 2px solid var(--grupo-color, currentColor); border-radius: 18px; box-shadow: 0 0 15px rgba(0,0,0,0.15); }
 .pk-t4 .pk-title { text-shadow: 0 0 8px var(--grupo-color, currentColor); }
-
-/* 5. Estilo Marcial Doble Franja */
 .pk-t5 { border: 2px solid var(--grupo-color, currentColor); border-left: 10px solid var(--grupo-color, currentColor); border-radius: 4px; }
-
-/* 6. Corona Gótica / Búho Central */
 .pk-t6 { border: 3px double var(--grupo-color, currentColor); border-radius: 20px; text-align: center; }
 .pk-t6 .pk-sub, .pk-t6 .pk-footer { justify-content: center; }
-
-/* 7. Espectro Flotante Esquina */
 .pk-t7 { border: 1px solid var(--grupo-color, currentColor); border-radius: 14px; box-shadow: inset 0 0 12px rgba(0,0,0,0.08); }
 .pk-t7::before { content: '<i class="icond-perseus2"></i>'; position: absolute; top: 12px; right: 18px; color: var(--grupo-color, currentColor); }
-
-/* 8. Cristal Helado Minimal */
 .pk-t8 { border: 2px solid var(--grupo-color, currentColor); border-radius: 2px; }
-
-/* 9. Terminal Cyberpunk */
 .pk-t9 { border-top: 3px solid var(--grupo-color, currentColor); border-bottom: 3px solid var(--grupo-color, currentColor); border-left: 1px solid var(--grupo-color, currentColor); border-right: 1px solid var(--grupo-color, currentColor); font-family: monospace; }
-
-/* 10. Dragón Ancestral Redondeado */
 .pk-t10 { border: 3px double var(--grupo-color, currentColor); border-radius: 16px; }
-
-/* 11. Vasija Minimalista Centrada */
 .pk-t11 { border: 2px solid var(--grupo-color, currentColor); border-radius: 6px; text-align: center; }
 .pk-t11 .pk-sub, .pk-t11 .pk-footer { justify-content: center; }
-
-/* 12. Hoja Asimétrica */
 .pk-t12 { border: 2px solid var(--grupo-color, currentColor); border-radius: 20px 0 20px 0; }
-
-/* 13. Pergamino Doble Marco */
 .pk-t13 { border: 1px solid var(--grupo-color, currentColor); outline: 2px solid var(--grupo-color, currentColor); outline-offset: -5px; padding: 30px; }
-
-/* 14. Cuenta de Fuego Brillante */
 .pk-t14 { border: 2px solid var(--grupo-color, currentColor); border-radius: 24px; box-shadow: 0 0 18px rgba(0,0,0,0.18); }
-
-/* 15. Meca Biselado Dinámico */
 .pk-t15 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px)); }
-
-/* 16. Esquema de Red / Nodo */
 .pk-t16 { border: 1px dashed var(--grupo-color, currentColor); padding: 32px; }
-
-/* 17. Astrolabio Circular / Radial */
 .pk-t17 { border-radius: 40px; border: 1px solid var(--grupo-color, currentColor); box-shadow: inset 0 0 0 1px var(--grupo-color, currentColor); padding: 32px; text-align: center; }
 .pk-t17 .pk-sub, .pk-t17 .pk-footer { justify-content: center; }
-
-/* 18. Blueprint Acotado CAD */
 .pk-t18 { border: 1px solid var(--grupo-color, currentColor); padding: 32px 24px; font-family: monospace; }
-
-/* 19. Alquimia Geométrica */
 .pk-t19 { border: 1px solid var(--grupo-color, currentColor); outline: 1px dashed var(--grupo-color, currentColor); outline-offset: -8px; padding: 32px; text-align: center; }
 .pk-t19 .pk-sub, .pk-t19 .pk-footer { justify-content: center; }
-
-/* 20. Malla Hexagonal / Vectorial */
 .pk-t20 { border: 1px solid var(--grupo-color, currentColor); clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px); }
