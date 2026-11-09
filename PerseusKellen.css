@@ -217,7 +217,6 @@ body.skin2 .perseus-footer-icon {
   box-sizing: border-box;
   font-family: inherit;
   color: inherit;
-  position: relative;
 }
 
 .p-inner {
@@ -270,7 +269,6 @@ body.skin2 .perseus-footer-icon {
   margin-bottom: 16px;
   max-height: 240px;
   overflow-y: auto;
-  padding-right: 6px;
 }
 
 .p-cap {
@@ -325,9 +323,7 @@ body.skin2 .p-cap {
   color: #6b21a8 !important;
 }
 
-/* ========== VARIANTES ========== */
-
-/* 01 - Clásica */
+/* Variantes */
 .p01 .p-box {
   border: 3px solid var(--perseus-dark);
   border-radius: 12px;
@@ -342,11 +338,7 @@ body.skin2 .p-cap {
   border: 1px dashed rgba(147, 51, 234, 0.45);
 }
 
-/* 02 - Minimal */
-.p02 .p-box {
-  border: none;
-  padding: 0;
-}
+.p02 .p-box { border: none; padding: 0; }
 .p02 .p-header {
   border-bottom: 1px solid var(--perseus);
   padding-bottom: 10px;
@@ -360,7 +352,6 @@ body.skin2 .p-cap {
   padding-top: 12px;
 }
 
-/* 03 - Marco estelar */
 .p03 .p-box {
   border: 2px solid var(--perseus);
   border-radius: 4px;
@@ -376,7 +367,6 @@ body.skin2 .p-cap {
   opacity: 0.7;
 }
 
-/* 04 - Cinta superior */
 .p04 .p-box {
   border: 1px solid var(--perseus);
   border-radius: 10px;
@@ -396,54 +386,14 @@ body.skin2 .p-cap {
   border: 1px solid rgba(147, 51, 234, 0.3);
 }
 
-/* 05 - Sombra suave */
 .p05 .p-box {
   border: none;
   border-radius: 16px;
   box-shadow: 0 0 0 1px rgba(147, 51, 234, 0.35), 0 20px 40px rgba(88, 28, 135, 0.18);
   padding: 6px;
 }
-.p05 .p-inner {
-  border-radius: 12px;
-}
+.p05 .p-inner { border-radius: 12px; }
 
-/* 06 - Líneas geométricas */
-.p06 .p-box {
-  border-left: 4px solid var(--perseus);
-  border-right: 4px solid var(--perseus);
-  border-top: 1px solid rgba(147, 51, 234, 0.4);
-  border-bottom: 1px solid rgba(147, 51, 234, 0.4);
-  padding: 22px 28px;
-}
-.p06 .p-footer {
-  border-top: 1px solid rgba(147, 51, 234, 0.3);
-  padding-top: 12px;
-}
-
-/* 07 - Óvalo */
-.p07 .p-box {
-  border: 2px solid var(--perseus);
-  border-radius: 40px 12px 40px 12px;
-  padding: 8px;
-}
-.p07 .p-inner {
-  border: 1px dashed rgba(192, 132, 252, 0.5);
-  border-radius: 34px 8px 34px 8px;
-}
-
-/* 08 - Doble marco */
-.p08 .p-box {
-  border: 1px solid var(--perseus-light);
-  padding: 12px;
-  border-radius: 6px;
-}
-.p08 .p-inner {
-  border: 1px solid var(--perseus-dark);
-  border-radius: 4px;
-  padding: 20px 22px;
-}
-
-/* 09 - Acento lateral */
 .p09 .p-box {
   border: none;
   border-left: 6px solid var(--perseus);
@@ -453,20 +403,3 @@ body.skin2 .p-cap {
 .p09 .p-footer {
   border-top: 1px dashed rgba(147, 51, 234, 0.35);
 }
-
-/* 10 - Estrellas */
-.p10 .p-box {
-  border: 2px solid var(--perseus);
-  border-radius: 8px;
-  position: relative;
-}
-.p10 .p-box::before,
-.p10 .p-box::after {
-  content: "✦";
-  position: absolute;
-  font-size: 14px;
-  color: var(--perseus-light);
-  opacity: 0.8;
-}
-.p10 .p-box::before { top: 8px; left: 12px; }
-.p10 .p-box::after { bottom: 8px; right: 12px; }
