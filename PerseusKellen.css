@@ -396,3 +396,328 @@ body.skin2 .p-cap {
 .p05 .p-inner {
   border-radius: 11px;
 }
+/* =========================================
+   FRATERNIDAD PERSEUS - 15 Tablillas Elegantes
+   ========================================= */
+
+:root {
+  --p: #9b6bff;
+  --p-dark: #6b3fa0;
+  --p-soft: #c4a8ff;
+  --p-muted: #b794f4;
+}
+
+/* Base común */
+.ps {
+  width: 580px;
+  max-width: 96%;
+  margin: 22px auto;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: inherit;
+  position: relative;
+}
+
+.ps-inner {
+  padding: 22px 24px 18px;
+  box-sizing: border-box;
+}
+
+.ps-brand {
+  font-family: Georgia, serif;
+  font-size: 9px;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--p-soft);
+  margin-bottom: 5px;
+}
+
+.ps-title {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: #e9d8fd;
+  text-transform: uppercase;
+  margin: 3px 0 6px;
+  line-height: 1.3;
+}
+
+.ps-frase {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--p-muted);
+  margin-bottom: 13px;
+}
+
+.ps-body {
+  font-size: 14.2px;
+  line-height: 1.75;
+  text-align: justify;
+  color: inherit;
+  margin-bottom: 15px;
+}
+
+.ps-cap {
+  float: left;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  line-height: 0.85;
+  padding: 2px 8px 0 0;
+  color: var(--p-soft);
+  font-weight: 700;
+}
+
+.ps-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 12px;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: inherit;
+  border-radius: 4px;
+}
+
+.ps-foot b {
+  color: var(--p-soft);
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+
+.ps-owl {
+  font-size: 15px;
+  color: var(--p-soft);
+  opacity: 0.8;
+}
+
+/* Modo claro */
+body.skin2 .ps,
+body.skin2 .ps-inner,
+body.skin2 .ps-body,
+body.skin2 .ps-foot {
+  color: #222 !important;
+}
+body.skin2 .ps-title {
+  color: #2d1b4e !important;
+}
+body.skin2 .ps-brand,
+body.skin2 .ps-frase,
+body.skin2 .ps-foot b,
+body.skin2 .ps-owl,
+body.skin2 .ps-cap {
+  color: #7c3aed !important;
+}
+
+/* ========== 15 VARIANTES ========== */
+
+/* 01 · Marco clásico suave */
+.ps01 {
+  border: 2px solid rgba(155, 107, 255, 0.55);
+  border-radius: 10px;
+  padding: 6px;
+  box-shadow: 0 8px 24px rgba(107, 63, 160, 0.12);
+}
+.ps01 .ps-inner {
+  border: 1px solid rgba(155, 107, 255, 0.25);
+  border-radius: 7px;
+}
+.ps01 .ps-foot {
+  border: 1px dashed rgba(155, 107, 255, 0.3);
+}
+
+/* 02 · Línea superior elegante */
+.ps02 {
+  border: none;
+  border-top: 3px solid var(--p);
+  padding-top: 18px;
+}
+.ps02 .ps-foot {
+  border-top: 1px solid rgba(155, 107, 255, 0.2);
+  padding-top: 11px;
+}
+
+/* 03 · Acento lateral fino */
+.ps03 {
+  border: none;
+  border-left: 4px solid var(--p);
+  padding-left: 20px;
+  background: linear-gradient(90deg, rgba(155, 107, 255, 0.04), transparent 65%);
+}
+.ps03 .ps-foot {
+  border-top: 1px dashed rgba(155, 107, 255, 0.25);
+}
+
+/* 04 · Doble marco sutil */
+.ps04 {
+  border: 1px solid rgba(155, 107, 255, 0.4);
+  padding: 9px;
+  border-radius: 8px;
+}
+.ps04 .ps-inner {
+  border: 1px solid rgba(155, 107, 255, 0.2);
+  border-radius: 5px;
+}
+.ps04 .ps-foot {
+  border: 1px dashed rgba(155, 107, 255, 0.25);
+}
+
+/* 05 · Minimal con línea inferior */
+.ps05 {
+  border: none;
+  padding: 0;
+}
+.ps05 .ps-header {
+  border-bottom: 1px solid rgba(155, 107, 255, 0.35);
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ps05 .ps-foot {
+  border-top: 1px dashed rgba(155, 107, 255, 0.25);
+  padding-top: 11px;
+}
+
+/* 06 · Esquinas decorativas */
+.ps06 {
+  border: 1.5px solid rgba(155, 107, 255, 0.45);
+  border-radius: 6px;
+  position: relative;
+}
+.ps06::before,
+.ps06::after {
+  content: "✦";
+  position: absolute;
+  font-size: 11px;
+  color: var(--p-soft);
+  opacity: 0.7;
+}
+.ps06::before { top: 7px; left: 10px; }
+.ps06::after { bottom: 7px; right: 10px; }
+
+/* 07 · Cinta superior suave */
+.ps07 {
+  border: 1px solid rgba(155, 107, 255, 0.35);
+  border-radius: 9px;
+  overflow: hidden;
+}
+.ps07 .ps-header {
+  background: linear-gradient(90deg, rgba(107, 63, 160, 0.85), rgba(155, 107, 255, 0.7));
+  margin: -22px -24px 15px;
+  padding: 13px 24px;
+}
+.ps07 .ps-brand,
+.ps07 .ps-title,
+.ps07 .ps-frase {
+  color: #f5f0ff !important;
+}
+.ps07 .ps-foot {
+  border: 1px solid rgba(155, 107, 255, 0.2);
+}
+
+/* 08 · Contorno difuminado */
+.ps08 {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px rgba(155, 107, 255, 0.3), 0 12px 28px rgba(107, 63, 160, 0.1);
+  padding: 5px;
+}
+.ps08 .ps-inner {
+  border-radius: 9px;
+}
+
+/* 09 · Editorial con guías */
+.ps09 {
+  border: none;
+  border-top: 1.5px solid rgba(155, 107, 255, 0.5);
+  border-bottom: 1.5px solid rgba(155, 107, 255, 0.5);
+  padding: 16px 0;
+}
+.ps09 .ps-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.ps09 .ps-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(155, 107, 255, 0.3);
+}
+
+/* 10 · Marco interrumpido */
+.ps10 {
+  border: 1.5px dashed rgba(155, 107, 255, 0.4);
+  border-radius: 8px;
+  padding: 4px;
+}
+.ps10 .ps-inner {
+  border: 1px solid rgba(155, 107, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* 11 · Lateral grueso suave */
+.ps11 {
+  border: none;
+  border-left: 6px solid rgba(155, 107, 255, 0.6);
+  padding-left: 18px;
+  box-shadow: -6px 0 0 -3px rgba(155, 107, 255, 0.2);
+}
+.ps11 .ps-foot {
+  border-top: 1px solid rgba(155, 107, 255, 0.2);
+}
+
+/* 12 · Tarjeta elevada sutil */
+.ps12 {
+  border: 1px solid rgba(155, 107, 255, 0.3);
+  border-radius: 11px;
+  box-shadow: 0 6px 20px rgba(107, 63, 160, 0.1);
+  padding: 4px;
+}
+.ps12 .ps-inner {
+  border-radius: 8px;
+}
+
+/* 13 · Doble línea horizontal */
+.ps13 {
+  border: none;
+  padding: 0;
+}
+.ps13 .ps-header {
+  border-top: 1px solid rgba(155, 107, 255, 0.4);
+  border-bottom: 1px solid rgba(155, 107, 255, 0.4);
+  padding: 11px 0;
+  margin-bottom: 14px;
+}
+.ps13 .ps-foot {
+  border: 1px solid rgba(155, 107, 255, 0.25);
+  border-radius: 5px;
+}
+
+/* 14 · Marco con brillo interior */
+.ps14 {
+  border: 1.5px solid rgba(155, 107, 255, 0.4);
+  border-radius: 9px;
+  box-shadow: inset 0 0 25px rgba(155, 107, 255, 0.04);
+  padding: 5px;
+}
+.ps14 .ps-inner {
+  border: 1px dashed rgba(155, 107, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* 15 · Asimétrico elegante */
+.ps15 {
+  border: 1.5px solid rgba(155, 107, 255, 0.4);
+  border-radius: 18px 6px 18px 6px;
+  padding: 5px;
+}
+.ps15 .ps-inner {
+  border-radius: 14px 3px 14px 3px;
+  border: 1px solid rgba(155, 107, 255, 0.15);
+}
