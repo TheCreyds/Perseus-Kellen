@@ -168,3 +168,350 @@
 .pk-style-20 { border: 2px solid var(--grupo-color, currentColor); border-radius: 12px; background: rgba(15, 15, 20, 0.9); }
 .pk-style-20 .pk-head { border-bottom: 1px dashed var(--grupo-color, currentColor); padding-bottom: 12px; }
 .pk-style-20 .pk-owl { position: absolute; top: 18px; right: 20px; font-size: 18px; color: var(--grupo-color, currentColor); }
+
+/* ==========================================
+   PERSEUS KELLEN — ROLEPLAY TABLETS
+   FOROACTIVO PHPBB3
+   20 DISEÑOS | CSS EXTERNO
+========================================== */
+
+.pk-box {
+    width: 550px;
+    max-width: 94%;
+    margin: 30px auto;
+    padding: 28px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background: transparent !important;
+    color: inherit !important;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: justify;
+    letter-spacing: .2px;
+}
+
+.pk-box * {
+    box-sizing: border-box;
+}
+
+.pk-box .pk-head {
+    position: relative;
+    margin-bottom: 23px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid currentColor;
+    border-color: inherit;
+}
+
+.pk-box .pk-kicker {
+    display: block;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: .65;
+    margin-bottom: 8px;
+}
+
+.pk-box .pk-title {
+    margin: 0;
+    padding: 0;
+    color: inherit !important;
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.pk-box .pk-subtitle {
+    margin-top: 7px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .65;
+}
+
+.pk-box .pk-owl {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 27px;
+    color: inherit;
+    opacity: .65;
+}
+
+.pk-box .pk-owl i {
+    font-size: inherit;
+}
+
+.pk-box .pk-text {
+    color: inherit !important;
+    font-size: 12px;
+    line-height: 1.9;
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+
+.pk-box .pk-text b,
+.pk-box .pk-text strong {
+    color: inherit;
+    font-weight: 800;
+}
+
+.pk-box .pk-text i {
+    opacity: .85;
+}
+
+.pk-box .pk-footer {
+    position: relative;
+    margin-top: 24px;
+    padding-top: 14px;
+    border-top: 1px solid currentColor;
+    color: inherit;
+    font-size: 9px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.pk-box .pk-data {
+    display: inline-block;
+    margin: 3px 12px 3px 0;
+}
+
+.pk-box .pk-data b {
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    opacity: .65;
+}
+
+.pk-box .pk-footer-icon {
+    display: block;
+    margin-top: 12px;
+    text-align: right;
+    font-size: 19px;
+    opacity: .75;
+}
+
+.pk-box .pk-footer-icon i {
+    font-size: inherit;
+}
+
+.pk-box a {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+.pk-box a:hover {
+    opacity: .65;
+}
+
+/* ==========================================
+   20 VARIANTES
+========================================== */
+
+/* 01 — ARCHITECT */
+.pk-t01 {
+    border: 1px solid currentColor;
+    border-top: 5px solid currentColor;
+}
+.pk-t01 .pk-title { letter-spacing: 4px; }
+
+/* 02 — ROYAL ARCHIVE */
+.pk-t02 {
+    outline: 1px solid currentColor;
+    outline-offset: -9px;
+    border: 1px solid currentColor;
+    padding: 36px;
+}
+.pk-t02 .pk-head { text-align: center; }
+.pk-t02 .pk-owl { position: static; display: block; margin-bottom: 10px; }
+.pk-t02 .pk-footer { border-top: 3px double currentColor; }
+
+/* 03 — EDITORIAL */
+.pk-t03 {
+    border-left: 7px solid currentColor;
+    padding-left: 30px;
+}
+.pk-t03 .pk-title { font-size: 30px; letter-spacing: -1px; }
+.pk-t03 .pk-head { border-bottom-style: dashed; }
+
+/* 04 — NOCTURNE */
+.pk-t04 {
+    border: 1px solid currentColor;
+    border-radius: 22px 2px 22px 2px;
+    padding: 34px;
+}
+.pk-t04 .pk-title { font-family: Georgia, serif; font-style: italic; }
+.pk-t04 .pk-footer { border-top-style: dotted; }
+
+/* 05 — TYPEWRITER */
+.pk-t05 {
+    border: 1px dashed currentColor;
+    font-family: Georgia, serif;
+    padding: 32px;
+}
+.pk-t05 .pk-title { font-family: monospace; letter-spacing: 1px; }
+.pk-t05 .pk-kicker { font-family: monospace; }
+
+/* 06 — MONOLITH */
+.pk-t06 {
+    border: 4px double currentColor;
+    padding: 32px;
+}
+.pk-t06 .pk-head { border-bottom: 3px double currentColor; }
+.pk-t06 .pk-title { font-size: 27px; }
+
+/* 07 — OFFSET */
+.pk-t07 {
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    padding: 35px 20px;
+}
+.pk-t07 .pk-head { margin-left: 35px; }
+.pk-t07 .pk-text { margin-left: 35px; }
+.pk-t07 .pk-footer { margin-left: 35px; }
+
+/* 08 — OBSIDIAN */
+.pk-t08 {
+    border: 1px solid currentColor;
+    box-shadow: 8px 8px 0 currentColor;
+    margin-bottom: 38px;
+}
+.pk-t08 .pk-title { letter-spacing: 5px; }
+
+/* 09 — THE CHRONICLE */
+.pk-t09 {
+    border: 1px solid currentColor;
+    padding: 38px;
+    font-family: Georgia, serif;
+}
+.pk-t09 .pk-title { font-family: Georgia, serif; font-size: 29px; }
+.pk-t09 .pk-kicker { font-style: italic; letter-spacing: 2px; }
+
+/* 10 — GEOMETRIC */
+.pk-t10 {
+    border: 2px solid currentColor;
+    border-radius: 3px;
+}
+.pk-t10 .pk-head { border-bottom: 2px solid currentColor; }
+.pk-t10 .pk-title { letter-spacing: 6px; }
+
+/* 11 — MINIMAL */
+.pk-t11 {
+    padding: 25px 15px;
+}
+.pk-t11 .pk-head { border-bottom: 2px solid currentColor; }
+.pk-t11 .pk-title { font-size: 32px; font-weight: 300; letter-spacing: 1px; }
+
+/* 12 — THE SEAL */
+.pk-t12 {
+    border: 1px solid currentColor;
+    border-radius: 100px 100px 3px 3px;
+    padding: 45px 32px 30px;
+}
+.pk-t12 .pk-head { text-align: center; }
+.pk-t12 .pk-owl { position: static; display: block; margin-bottom: 12px; }
+.pk-t12 .pk-footer { text-align: center; }
+
+/* 13 — CUT PAPER */
+.pk-t13 {
+    border: 1px solid currentColor;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+}
+.pk-t13 .pk-title { font-size: 25px; }
+
+/* 14 — CLASSIFIED */
+.pk-t14 {
+    border: 1px solid currentColor;
+    padding: 32px;
+}
+.pk-t14 .pk-kicker { border-bottom: 1px dashed currentColor; padding-bottom: 7px; }
+.pk-t14 .pk-title { font-family: monospace; letter-spacing: 1px; }
+.pk-t14 .pk-footer { font-family: monospace; }
+
+/* 15 — DOUBLE FRAME */
+.pk-t15 {
+    border: 3px double currentColor;
+    outline: 1px solid currentColor;
+    outline-offset: 5px;
+    margin: 35px auto;
+}
+.pk-t15 .pk-head { padding-bottom: 22px; }
+
+/* 16 — FRAGMENT */
+.pk-t16 {
+    border-left: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    padding: 30px 30px 30px 38px;
+}
+.pk-t16 .pk-title { font-family: Georgia, serif; font-style: italic; }
+
+/* 17 — CIRCULAR */
+.pk-t17 {
+    border: 1px solid currentColor;
+    border-radius: 35px;
+    padding: 35px;
+}
+.pk-t17 .pk-head { text-align: center; }
+.pk-t17 .pk-owl { position: static; display: block; margin-bottom: 10px; }
+.pk-t17 .pk-footer { text-align: center; }
+
+/* 18 — BLUEPRINT */
+.pk-t18 {
+    border: 1px solid currentColor;
+    background-image: linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+}
+.pk-t18 .pk-title { font-family: monospace; letter-spacing: 1px; }
+
+/* 19 — RAVENSHIELD */
+.pk-t19 {
+    border-top: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    padding: 38px 30px;
+}
+.pk-t19 .pk-head { text-align: center; }
+.pk-t19 .pk-owl { position: static; display: block; margin-bottom: 12px; }
+.pk-t19 .pk-title { letter-spacing: 5px; }
+
+/* 20 — PERSEUS SIGNATURE */
+.pk-t20 {
+    border: 1px solid currentColor;
+    padding: 34px;
+    border-radius: 2px;
+}
+.pk-t20 .pk-head { border-bottom: 1px solid currentColor; }
+.pk-t20 .pk-title { font-size: 25px; letter-spacing: 3px; }
+.pk-t20 .pk-owl { font-size: 34px; opacity: .9; }
+.pk-t20 .pk-footer { border-top: 3px double currentColor; }
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media screen and (max-width: 600px) {
+    .pk-box {
+        width: 96%;
+        max-width: 96%;
+        padding: 22px;
+    }
+    .pk-box .pk-title {
+        font-size: 20px;
+    }
+    .pk-t02,
+    .pk-t09,
+    .pk-t15 {
+        padding: 27px;
+    }
+    .pk-t07 .pk-head,
+    .pk-t07 .pk-text,
+    .pk-t07 .pk-footer {
+        margin-left: 12px;
+    }
+}
