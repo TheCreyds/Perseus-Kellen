@@ -3301,115 +3301,620 @@
 .v-set2-20 .pk-mod2-body { border: 2px solid var(--grupo-color, #666); clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px); }
 .v-set2-20 .pk-mod2-ft-item { border: 1px solid var(--grupo-color, #666); }
 
+
 /* =========================================================
-   CHATGPT CREYDS & KELLEN - ARCHIVO EXTERNO COMPLETO (SET 1, 2 Y 3)
+   CREYDS & KELLEN — COLLECTION 03
+   10 INNOVATIVE EDITORIAL ROLEPLAY TABLES
+   Transparent backgrounds / Group color inheritance
    ========================================================= */
 
-/* --- ESTILOS BASE Y SET 1 & 2 ANTERIORES --- */
-.pk-mod, .pk-mod2, .pk-mod3 {
+/* =============== SHARED STRUCTURE =============== */
+
+.pk3-box {
   width: 500px;
   max-width: 95%;
-  margin: 25px auto;
-  padding: 24px;
-  box-sizing: border-box;
-  background: transparent;
-  color: inherit;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  line-height: 1.75;
+  margin: 35px auto;
+  padding: 32px;
   position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: transparent !important;
+  color: inherit;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
 }
 
-/* --- SET 3: ESTILOS INNOVADORES EXTERNOS --- */
-.pk-mod3-head {
+.pk3-box * {
+  box-sizing: border-box;
+}
+
+.pk3-head {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
-.pk-mod3-icon {
-  width: 38px;
-  height: 38px;
-  border: 2px solid var(--grupo-color, #666);
+.pk3-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: inherit;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.pk3-owl {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  color: var(--grupo-color, inherit);
-  flex-shrink: 0;
-  background: rgba(0,0,0,0.08);
+  color: inherit;
+  font-size: 27px;
+  line-height: 1;
 }
 
-.pk-mod3-title {
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--grupo-color, inherit);
-  margin: 0;
-  flex-grow: 1;
-}
-
-.pk-mod3-body {
-  padding: 20px;
-  margin-bottom: 14px;
+.pk3-content {
+  position: relative;
+  margin: 0 0 28px;
+  color: inherit;
+  font-size: 13px;
+  line-height: 1.9;
   text-align: justify;
 }
 
-.pk-mod3-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  text-align: center;
-}
-
-.pk-mod3-ft-item {
-  padding: 6px;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+.pk3-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: inherit;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  opacity: 0.85;
 }
 
-/* 01. QUANTUM SHIELD */
-.v-set3-01 .pk-mod3-body { border: 2px solid var(--grupo-color, #666); clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px); }
-.v-set3-01 .pk-mod3-ft-item { border: 1px dashed var(--grupo-color, #666); }
+.pk3-interaction {
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
 
-/* 02. PULSE MATRIX */
-.v-set3-02 .pk-mod3-body { border: 1px dashed var(--grupo-color, #666); outline: 1px dashed var(--grupo-color, #666); outline-offset: -5px; }
-.v-set3-02 .pk-mod3-icon { border-radius: 6px; }
+.pk3-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 15px;
+}
 
-/* 03. APEX TACTICAL */
-.v-set3-03 .pk-mod3-body { border-top: 4px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); border-left: 1px solid var(--grupo-color, #666); border-right: 1px solid var(--grupo-color, #666); }
-.v-set3-03 .pk-mod3-title { letter-spacing: 4px; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 4px; }
+.pk3-data b {
+  font-weight: 900;
+}
 
-/* 04. NEBULA CORE */
-.v-set3-04 .pk-mod3-body { border: 2px solid var(--grupo-color, #666); border-radius: 18px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
-.v-set3-04 .pk-mod3-icon { border-radius: 50%; }
+.pk3-label {
+  font-size: 8px;
+  letter-spacing: 3px;
+  opacity: .65;
+}
 
-/* 05. ZENITH LINE */
-.v-set3-05 .pk-mod3-body { border-left: 8px solid var(--grupo-color, #666); border-top: none; border-right: none; border-bottom: none; background: rgba(0,0,0,0.02); }
-.v-set3-05 .pk-mod3-footer { border-top: 1px solid var(--grupo-color, #666); padding-top: 8px; }
+/* =============== 01. NOIR =============== */
+/* Luxury editorial / Oversized typography */
 
-/* 06. OMEGA FRAME */
-.v-set3-06 .pk-mod3-body { border: 2px solid var(--grupo-color, #666); border-radius: 0 0 20px 20px; }
-.v-set3-06 .pk-mod3-head { background: rgba(0,0,0,0.04); padding: 8px; border-radius: 4px; }
+.pk3-noir {
+  padding: 38px 32px;
+}
 
-/* 07. ECLIPSE RING */
-.v-set3-07 .pk-mod3-body { border: 3px double var(--grupo-color, #666); border-radius: 10px; }
-.v-set3-07 .pk-mod3-head { justify-content: center; flex-direction: column; text-align: center; }
-.v-set3-07 .pk-mod3-title { border-bottom: 1px solid var(--grupo-color, #666); width: 100%; padding-bottom: 6px; }
+.pk3-noir .pk3-head {
+  display: block;
+  min-height: 145px;
+  padding-top: 25px;
+}
 
-/* 08. VORTEX BEVEL */
-.v-set3-08 .pk-mod3-body { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 calc(100% - 15px)); }
-.v-set3-08 .pk-mod3-ft-item { border-bottom: 2px solid var(--grupo-color, #666); }
+.pk3-noir .pk3-title {
+  font-family: Georgia, serif;
+  font-size: 53px;
+  font-weight: 400;
+  letter-spacing: -3px;
+  line-height: .95;
+  max-width: 85%;
+}
 
-/* 09. CHRONOS GRID */
-.v-set3-09 .pk-mod3-body { border: 1px solid var(--grupo-color, #666); border-radius: 6px; }
-.v-set3-09 .pk-mod3-ft-item { background: rgba(0,0,0,0.05); border: 1px solid var(--grupo-color, #666); border-radius: 4px; }
+.pk3-noir .pk3-owl {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 34px;
+}
 
-/* 10. SYNAPSE NODE */
-.v-set3-10 .pk-mod3-body { border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); border-left: 2px dotted var(--grupo-color, #666); border-right: 2px dotted var(--grupo-color, #666); }
-.v-set3-10 .pk-mod3-title { font-weight: 900; letter-spacing: 3px; }
+.pk3-noir .pk3-head::after {
+  content: 'PRIVATE EDITION  /  VOL. 01';
+  display: block;
+  margin-top: 20px;
+  font-size: 8px;
+  letter-spacing: 4px;
+}
+
+.pk3-noir .pk3-content {
+  padding: 20px 0 20px 40px;
+  border-left: 1px solid currentColor;
+}
+
+.pk3-noir .pk3-footer {
+  margin-left: 40px;
+  padding-top: 15px;
+  border-top: 1px solid currentColor;
+}
+
+/* =============== 02. MONOLITH =============== */
+/* Monumental vertical typography */
+
+.pk3-monolith {
+  padding: 30px 30px 30px 85px;
+}
+
+.pk3-monolith::before {
+  content: 'M O N O L I T H';
+  position: absolute;
+  left: 24px;
+  top: 30px;
+  writing-mode: vertical-rl;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+
+.pk3-monolith .pk3-head {
+  display: block;
+  min-height: 105px;
+}
+
+.pk3-monolith .pk3-title {
+  font-size: 38px;
+  line-height: .95;
+  letter-spacing: -2px;
+  overflow-wrap: anywhere;
+}
+
+.pk3-monolith .pk3-owl {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 36px;
+}
+
+.pk3-monolith .pk3-content {
+  padding: 20px 0;
+  border-top: 5px solid currentColor;
+}
+
+.pk3-monolith .pk3-footer {
+  padding: 15px;
+  border-left: 3px solid currentColor;
+}
+
+/* =============== 03. MUSEUM =============== */
+/* Art exhibition / Curatorial layout */
+
+.pk3-museum {
+  padding: 35px;
+}
+
+.pk3-museum .pk3-head {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  align-items: end;
+  padding-bottom: 18px;
+  border-bottom: 1px solid currentColor;
+}
+
+.pk3-museum .pk3-title {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: -1px;
+}
+
+.pk3-museum .pk3-owl {
+  width: 75px;
+  height: 90px;
+  border-left: 1px solid currentColor;
+  font-size: 36px;
+}
+
+.pk3-museum .pk3-head::before {
+  content: 'EXHIBITION / COLLECTION 003';
+  grid-column: 1 / -1;
+  grid-row: 1;
+  font-size: 8px;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+  opacity: .65;
+}
+
+.pk3-museum .pk3-content {
+  padding: 25px 12px;
+  margin: 15px 0;
+}
+
+.pk3-museum .pk3-content::before {
+  content: '—';
+  display: block;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.pk3-museum .pk3-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 15px;
+  border-top: 1px solid currentColor;
+}
+
+/* =============== 04. CHROMA =============== */
+/* Layered circles / Experimental geometry */
+
+.pk3-chroma {
+  padding: 35px;
+}
+
+.pk3-chroma .pk3-head {
+  min-height: 145px;
+  align-items: center;
+}
+
+.pk3-chroma .pk3-title {
+  position: relative;
+  z-index: 2;
+  font-size: 39px;
+  max-width: 75%;
+  letter-spacing: -2px;
+}
+
+.pk3-chroma .pk3-owl {
+  position: absolute;
+  right: 13px;
+  top: 10px;
+  width: 105px;
+  height: 105px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 38px;
+  outline: 1px dashed currentColor;
+  outline-offset: 8px;
+}
+
+.pk3-chroma .pk3-head::after {
+  content: 'C / K';
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  font-size: 9px;
+  letter-spacing: 5px;
+}
+
+.pk3-chroma .pk3-content {
+  padding: 20px 10px;
+}
+
+.pk3-chroma .pk3-footer {
+  padding: 17px;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+}
+
+/* =============== 05. ÉCLAT =============== */
+/* Haute couture / Fashion magazine */
+
+.pk3-eclat {
+  padding: 48px 38px;
+}
+
+.pk3-eclat .pk3-head {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.pk3-eclat .pk3-title {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 7px;
+}
+
+.pk3-eclat .pk3-owl {
+  font-size: 29px;
+}
+
+.pk3-eclat .pk3-head::before {
+  content: 'THE ART OF THE MOMENT';
+  font-size: 8px;
+  letter-spacing: 5px;
+  order: 3;
+}
+
+.pk3-eclat .pk3-content {
+  padding: 25px 15px;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+}
+
+.pk3-eclat .pk3-footer {
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* =============== 06. INDEX =============== */
+/* Modular archive / Numbered editorial */
+
+.pk3-index {
+  padding: 30px;
+}
+
+.pk3-index .pk3-head {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid currentColor;
+}
+
+.pk3-index .pk3-head::before {
+  content: '003';
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -5px;
+}
+
+.pk3-index .pk3-title {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 24px;
+}
+
+.pk3-index .pk3-owl {
+  grid-column: 2;
+  grid-row: 2;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.pk3-index .pk3-content {
+  padding: 22px 0;
+}
+
+.pk3-index .pk3-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding-top: 15px;
+  border-top: 1px solid currentColor;
+}
+
+/* =============== 07. AFTERHOURS =============== */
+/* Cinematic / Minimalist atmosphere */
+
+.pk3-afterhours {
+  padding: 45px 38px;
+}
+
+.pk3-afterhours .pk3-head {
+  min-height: 115px;
+  display: block;
+}
+
+.pk3-afterhours .pk3-title {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 37px;
+  letter-spacing: 1px;
+  max-width: 80%;
+}
+
+.pk3-afterhours .pk3-owl {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  font-size: 32px;
+}
+
+.pk3-afterhours .pk3-head::after {
+  content: 'AFTER DARK  /  SCENE 07';
+  display: block;
+  margin-top: 22px;
+  font-size: 8px;
+  letter-spacing: 4px;
+}
+
+.pk3-afterhours .pk3-content {
+  padding: 25px 0;
+  margin-bottom: 35px;
+}
+
+.pk3-afterhours .pk3-footer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 18px;
+  border-top: 1px solid currentColor;
+}
+
+/* =============== 08. ATLAS =============== */
+/* Cartographic / Coordinate layout */
+
+.pk3-atlas {
+  padding: 32px;
+}
+
+.pk3-atlas .pk3-head {
+  display: block;
+  padding: 15px 0 25px 65px;
+}
+
+.pk3-atlas .pk3-title {
+  font-size: 29px;
+  letter-spacing: 4px;
+}
+
+.pk3-atlas .pk3-owl {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  font-size: 26px;
+  border: 1px solid currentColor;
+}
+
+.pk3-atlas .pk3-head::after {
+  content: 'N 34° 03’  /  W 118° 14’';
+  display: block;
+  margin-top: 12px;
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+
+.pk3-atlas .pk3-content {
+  padding: 20px;
+  border-left: 1px dashed currentColor;
+  border-bottom: 1px dashed currentColor;
+}
+
+.pk3-atlas .pk3-footer {
+  padding-top: 15px;
+}
+
+/* =============== 09. FOLIO =============== */
+/* Author book / Literary composition */
+
+.pk3-folio {
+  padding: 40px 38px;
+}
+
+.pk3-folio .pk3-head {
+  display: block;
+  min-height: 105px;
+}
+
+.pk3-folio .pk3-title {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1;
+  max-width: 75%;
+}
+
+.pk3-folio .pk3-owl {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 31px;
+}
+
+.pk3-folio .pk3-head::after {
+  content: 'A STORY IN PROGRESS';
+  display: block;
+  margin-top: 18px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.pk3-folio .pk3-content {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 2;
+  text-indent: 28px;
+}
+
+.pk3-folio .pk3-footer {
+  padding-top: 15px;
+  border-top: 1px solid currentColor;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* =============== 10. OBSIDIAN =============== */
+/* Negative space / Owl as focal element */
+
+.pk3-obsidian {
+  padding: 35px;
+}
+
+.pk3-obsidian .pk3-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 190px;
+  padding-top: 12px;
+}
+
+.pk3-obsidian .pk3-owl {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  font-size: 75px;
+  opacity: .9;
+}
+
+.pk3-obsidian .pk3-title {
+  align-self: flex-end;
+  margin-top: auto !important;
+  font-size: 36px;
+  max-width: 85%;
+  text-align: right;
+  letter-spacing: -1px;
+}
+
+.pk3-obsidian .pk3-head::before {
+  content: 'PERSEUS / PRIVATE JOURNAL';
+  font-size: 8px;
+  letter-spacing: 4px;
+}
+
+.pk3-obsidian .pk3-content {
+  padding: 22px 0;
+  border-top: 1px solid currentColor;
+}
+
+.pk3-obsidian .pk3-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding-top: 18px;
+  border-top: 1px solid currentColor;
+}
+
+/* =============== RESPONSIVE =============== */
+
+@media screen and (max-width: 540px) {
+  .pk3-box {
+    width: 95%;
+    padding: 23px;
+  }
+
+  .pk3-title {
+    overflow-wrap: anywhere;
+  }
+
+  .pk3-data {
+    flex-direction: column;
+  }
+
+  .pk3-gazette .pk3-content {
+    column-count: 1;
+  }
+}
