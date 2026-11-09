@@ -1,133 +1,159 @@
 /* =========================================================
-   PERSEUS KELEN - COLECCIÓN DE 20 TABLILLAS DE ROL
+   PERSEUS-KELLEN - 20 TABLILLAS DE ROL CREATIVAS
+   Fondo transparente / Herencia de color de grupo
    ========================================================= */
 
-/* Estilos Compartidos y Adaptativos a Modos de Foroactivo */
-.perseus-wrap {
-    width: 600px;
-    max-width: 100%;
-    margin: 25px auto;
-    box-sizing: border-box;
-    font-family: inherit;
-    color: inherit;
-    position: relative;
-    background: transparent;
+/* Estructura Base Común */
+.pk-box {
+  width: 550px;
+  max-width: 95%;
+  margin: 25px auto;
+  padding: 28px;
+  box-sizing: border-box;
+  background: transparent;
+  color: inherit;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 1.75;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Control Automático de Texto (Blanco en Oscuro, Negro en Claro) */
-body.skin2 .perseus-wrap, 
-body.skin2 .perseus-text, 
-body.skin2 .perseus-footer {
-    color: #1a1a1a !important;
+.pk-head {
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
 }
 
-body:not(.skin2) .perseus-wrap, 
-body:not(.skin2) .perseus-text, 
-body:not(.skin2) .perseus-footer {
-    color: #f3e8ff;
+.pk-tag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 3px;
+  background: var(--grupo-color, currentColor);
+  border: 1px solid var(--grupo-color, currentColor);
+  color: #fff;
+  margin-bottom: 8px;
 }
 
-/* Cuerpo de Rol y Scroll */
-.perseus-text {
-    font-family: inherit;
-    font-size: 13.5px;
-    line-height: 1.8;
-    text-align: justify;
-    max-height: 240px;
-    overflow-y: auto;
-    padding-right: 8px;
-    margin-bottom: 15px;
+.pk-title {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+  margin: 0 0 8px 0;
 }
 
-.perseus-text::-webkit-scrollbar {
-    width: 3px;
-}
-.perseus-text::-webkit-scrollbar-thumb {
-    background: var(--grupo-color, #7e22ce);
-}
-
-/* Cuadro Inferior: Mención, Interacción y Outfit */
-.perseus-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 16px;
-    box-sizing: border-box;
-    background: rgba(126, 34, 206, 0.05);
-    border: 1px dashed var(--grupo-color, #9333ea);
-    border-radius: 6px;
-    font-size: 12px;
-    line-height: 1.6;
+.pk-sub {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.perseus-footer b {
-    color: var(--grupo-color, #9333ea);
+.pk-text {
+  text-align: justify;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
 }
 
-.perseus-owl-icon {
-    font-size: 20px;
-    color: var(--grupo-color, #9333ea);
-    opacity: 0.85;
+/* Cuadro de Interacción Final */
+.pk-footer {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--grupo-color, currentColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  z-index: 2;
+  position: relative;
 }
 
-/* --- ESTILOS ESPECÍFICOS PARA CADA UNA DE LAS 20 VARIANTES --- */
+.pk-footer span {
+  color: var(--grupo-color, inherit);
+}
 
-/* 1. HUD Táctico Nocturno */
-.p-hud { border: 2px solid var(--grupo-color, #7e22ce); padding: 25px; border-radius: 4px; clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%); }
+/* --- 20 DISEÑOS ÚNICOS --- */
 
-/* 2. Marco Real Doble Bisel */
-.p-royal { border: 1px solid var(--grupo-color, #7e22ce); outline: 2px solid var(--grupo-color, #7e22ce); outline-offset: -8px; padding: 30px; }
+/* 1. HUD Táctico Búho */
+.pk-t1 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%); }
+.pk-t1::before { content: '🦉'; position: absolute; top: 10px; right: 15px; font-size: 14px; opacity: 0.7; }
 
-/* 3. Escudo Lateral Pesado */
-.p-shield { border-left: 8px solid var(--grupo-color, #7e22ce); border-top: 1px solid var(--grupo-color, #7e22ce); border-right: 1px solid var(--grupo-color, #7e22ce); border-bottom: 1px solid var(--grupo-color, #7e22ce); padding: 25px; border-radius: 10px; }
+/* 2. Marco Doble Biselado */
+.pk-t2 { border: 1px solid var(--grupo-color, currentColor); outline: 2px solid var(--grupo-color, currentColor); outline-offset: -7px; padding: 34px; }
+.pk-t2 .pk-footer { border-top: 2px double var(--grupo-color, currentColor); }
 
-/* 4. Núcleo Cósmico Glowing */
-.p-glow { border: 2px solid var(--grupo-color, #7e22ce); padding: 25px; border-radius: 16px; box-shadow: 0 0 20px rgba(126,34,206,0.2); }
+/* 3. Escudo Lateral Orgánico */
+.pk-t3 { border-left: 6px solid var(--grupo-color, currentColor); border-right: 1px solid var(--grupo-color, currentColor); border-top: 1px solid var(--grupo-color, currentColor); border-bottom: 1px solid var(--grupo-color, currentColor); border-radius: 8px; }
 
-/* 5. Doble Franja Marcial */
-.p-martial { border: 2px solid var(--grupo-color, #7e22ce); border-left: 12px solid var(--grupo-color, #7e22ce); padding: 25px; border-radius: 4px; }
+/* 4. Núcleo Cósmico con Sombra */
+.pk-t4 { border: 2px solid var(--grupo-color, currentColor); border-radius: 18px; box-shadow: 0 0 15px rgba(0,0,0,0.15); }
+.pk-t4 .pk-title { text-shadow: 0 0 8px var(--grupo-color, currentColor); }
 
-/* 6. Corona Imperial Gótica */
-.p-crown { border: 3px double var(--grupo-color, #7e22ce); padding: 25px; border-radius: 20px; text-align: center; }
+/* 5. Estilo Marcial Doble Franja */
+.pk-t5 { border: 2px solid var(--grupo-color, currentColor); border-left: 10px solid var(--grupo-color, currentColor); border-radius: 4px; }
 
-/* 7. Espectro Flotante */
-.p-specter { border: 1px solid var(--grupo-color, #7e22ce); padding: 25px; border-radius: 14px; box-shadow: inset 0 0 15px rgba(0,0,0,0.1); }
+/* 6. Corona Gótica / Búho Central */
+.pk-t6 { border: 3px double var(--grupo-color, currentColor); border-radius: 20px; text-align: center; }
+.pk-t6 .pk-sub, .pk-t6 .pk-footer { justify-content: center; }
 
-/* 8. Cristal Helado */
-.p-crystal { border: 2px solid var(--grupo-color, #7e22ce); padding: 25px; border-radius: 2px; }
+/* 7. Espectro Flotante Esquina */
+.pk-t7 { border: 1px solid var(--grupo-color, currentColor); border-radius: 14px; box-shadow: inset 0 0 12px rgba(0,0,0,0.08); }
+.pk-t7::before { content: '<i class="icond-perseus2"></i>'; position: absolute; top: 12px; right: 18px; color: var(--grupo-color, currentColor); }
+
+/* 8. Cristal Helado Minimal */
+.pk-t8 { border: 2px solid var(--grupo-color, currentColor); border-radius: 2px; }
 
 /* 9. Terminal Cyberpunk */
-.p-cyber { border-top: 4px solid var(--grupo-color, #7e22ce); border-bottom: 4px solid var(--grupo-color, #7e22ce); border-left: 1px solid var(--grupo-color, #7e22ce); border-right: 1px solid var(--grupo-color, #7e22ce); padding: 25px; }
+.pk-t9 { border-top: 3px solid var(--grupo-color, currentColor); border-bottom: 3px solid var(--grupo-color, currentColor); border-left: 1px solid var(--grupo-color, currentColor); border-right: 1px solid var(--grupo-color, currentColor); font-family: monospace; }
 
-/* 10. Dragón Ancestral */
-.p-ancient { border: 3px double var(--grupo-color, #7e22ce); padding: 25px; border-radius: 12px; }
+/* 10. Dragón Ancestral Redondeado */
+.pk-t10 { border: 3px double var(--grupo-color, currentColor); border-radius: 16px; }
 
-/* 11. Vasija Sagrada */
-.p-vessel { border: 2px solid var(--grupo-color, #7e22ce); padding: 25px; border-radius: 8px; text-align: center; }
+/* 11. Vasija Minimalista Centrada */
+.pk-t11 { border: 2px solid var(--grupo-color, currentColor); border-radius: 6px; text-align: center; }
+.pk-t11 .pk-sub, .pk-t11 .pk-footer { justify-content: center; }
 
-/* 12. Hoja Afilada Asimétrica */
-.p-blade { border: 2px solid var(--grupo-color, #7e22ce); padding: 25px; border-radius: 20px 0 20px 0; }
+/* 12. Hoja Asimétrica */
+.pk-t12 { border: 2px solid var(--grupo-color, currentColor); border-radius: 20px 0 20px 0; }
 
-/* 13. Pergamino Abierto */
-.p-scroll { border: 1px solid var(--grupo-color, #7e22ce); outline: 2px solid var(--grupo-color, #7e22ce); outline-offset: -6px; padding: 28px; }
+/* 13. Pergamino Doble Marco */
+.pk-t13 { border: 1px solid var(--grupo-color, currentColor); outline: 2px solid var(--grupo-color, currentColor); outline-offset: -5px; padding: 30px; }
 
-/* 14. Cuenta de Fuego */
-.p-fire { border: 2px solid var(--grupo-color, #7e22ce); padding: 25px; border-radius: 24px; }
+/* 14. Cuenta de Fuego Brillante */
+.pk-t14 { border: 2px solid var(--grupo-color, currentColor); border-radius: 24px; box-shadow: 0 0 18px rgba(0,0,0,0.18); }
 
-/* 15. Meca Biselado */
-.p-mecha { border: 2px solid var(--grupo-color, #7e22ce); padding: 25px; clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px)); }
+/* 15. Meca Biselado Dinámico */
+.pk-t15 { border: 2px solid var(--grupo-color, currentColor); clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px)); }
 
 /* 16. Esquema de Red / Nodo */
-.p-node { border-left: 3px dotted var(--grupo-color, #7e22ce); border-top: 1px solid var(--grupo-color, #7e22ce); border-right: 1px solid var(--grupo-color, #7e22ce); border-bottom: 1px solid var(--grupo-color, #7e22ce); padding: 25px; }
+.pk-t16 { border: 1px dashed var(--grupo-color, currentColor); padding: 32px; }
 
-/* 17. Astrolabio Circular */
-.p-astro { border: 1px solid var(--grupo-color, #7e22ce); padding: 30px; border-radius: 50%; text-align: center; }
+/* 17. Astrolabio Circular / Radial */
+.pk-t17 { border-radius: 40px; border: 1px solid var(--grupo-color, currentColor); box-shadow: inset 0 0 0 1px var(--grupo-color, currentColor); padding: 32px; text-align: center; }
+.pk-t17 .pk-sub, .pk-t17 .pk-footer { justify-content: center; }
 
-/* 18. Acotación CAD */
-.p-cad { border: 1px solid var(--grupo-color, #7e22ce); padding: 28px; position: relative; }
+/* 18. Blueprint Acotado CAD */
+.pk-t18 { border: 1px solid var(--grupo-color, currentColor); padding: 32px 24px; font-family: monospace; }
 
 /* 19. Alquimia Geométrica */
-.p-sigil { border: 1px solid var(--grupo-color, #7e22ce); outline: 1px dashed var(--grupo-color, #7e22ce); outline-offset: -8px; padding: 30px; text-align: center; }
+.pk-t19 { border: 1px solid var(--grupo-color, currentColor); outline: 1px dashed var(--grupo-color, currentColor); outline-offset: -8px; padding: 32px; text-align: center; }
+.pk-t19 .pk-sub, .pk-t19 .pk-footer { justify-content: center; }
 
-/* 20. Malla Hexagonal */
-.p-hex { border: 1px solid var(--grupo-color, #7e22ce); padding: 25px; clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px); }
+/* 20. Malla Hexagonal / Vectorial */
+.pk-t20 { border: 1px solid var(--grupo-color, currentColor); clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px); }
