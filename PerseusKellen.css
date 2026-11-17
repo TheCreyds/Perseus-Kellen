@@ -4011,8 +4011,9 @@
     font-size: 29px;
   }
 }
+
 /* =========================================================
-   CREYDS & KELLEN - SET POKÉMON GEN 1 & 2 (CON IMÁGENES)
+   CREYDS & KELLEN - SET 4: POKÉMON GEN 1 & 2 (CON IMÁGENES)
    ========================================================= */
 
 .pk-poke {
@@ -4023,7 +4024,7 @@
   box-sizing: border-box;
   background: transparent;
   color: inherit;
-  font-family: 'Cinzel', 'Inter', serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
   font-size: 13px;
   line-height: 1.8;
   position: relative;
@@ -4042,7 +4043,7 @@
 .pk-poke-title {
   margin: 0;
   font-size: 19px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--grupo-color, inherit);
@@ -4054,7 +4055,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   opacity: 0.8;
-  border: 1px dashed var(--grupo-color, #666);
+  border: 1px solid var(--grupo-color, #666);
   padding: 3px 8px;
 }
 
@@ -4065,9 +4066,14 @@
   align-items: flex-start;
 }
 
-/* Contenedor de Imagen Pequeño/Mediano (7 tablillas) */
-.pk-poke-img-sm {
-  width: 120px;
+.pk-poke-text {
+  flex-grow: 1;
+  text-align: justify;
+}
+
+/* Contenedores de Imagen (Alturas y anchuras diferenciadas) */
+.pk-poke-img-small {
+  width: 110px;
   height: 140px;
   flex-shrink: 0;
   border: 2px solid var(--grupo-color, #666);
@@ -4077,16 +4083,16 @@
   align-items: center;
   justify-content: center;
 }
-.pk-poke-img-sm img {
+
+.pk-poke-img-small img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Contenedor de Imagen Amplio (3 tablillas) */
-.pk-poke-img-lg {
+.pk-poke-img-wide {
   width: 100%;
-  height: 180px;
+  height: 170px;
   margin-bottom: 16px;
   border: 2px solid var(--grupo-color, #666);
   background: rgba(0,0,0,0.1);
@@ -4095,15 +4101,11 @@
   align-items: center;
   justify-content: center;
 }
-.pk-poke-img-lg img {
+
+.pk-poke-img-wide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.pk-poke-text {
-  text-align: justify;
-  flex-grow: 1;
 }
 
 .pk-poke-footer {
@@ -4113,55 +4115,53 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   text-align: center;
+}
+
+.pk-poke-ft-item {
+  padding: 6px;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  opacity: 0.9;
-}
-.pk-poke-ft-item {
+  opacity: 0.85;
   border: 1px solid var(--grupo-color, #666);
-  padding: 5px;
 }
 
-/* --- ESTILOS ESPECÍFICOS DE LAS 10 TABLILLAS --- */
+/* --- GRUPO A: 7 TABLILLAS CON ESPACIO PEQUEÑO PARA IMAGEN --- */
 
-/* 01. CHARIZARD (Imagen Pequeña - Borde Achaflanado) */
-.v-charizard .pk-poke-img-sm { clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); }
-.v-charizard { border: 2px solid var(--grupo-color, #666); box-shadow: 4px 4px 0 0 var(--grupo-color, #666); }
+/* 01. CHARIZARD (Flames & Angles) */
+.pk-charizard .pk-poke-body-wrap { flex-direction: row-reverse; }
+.pk-charizard { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%); }
 
-/* 02. BLASTOISE (Imagen Pequeña - Doble Marco Técnico) */
-.v-blastoise .pk-poke-img-sm { border-radius: 8px; }
-.v-blastoise { border: 1px solid var(--grupo-color, #666); outline: 2px solid var(--grupo-color, #666); outline-offset: -6px; }
+/* 02. BLASTOISE (Heavy Shell & Double Border) */
+.pk-blastoise { border: 1px solid var(--grupo-color, #666); outline: 2px solid var(--grupo-color, #666); outline-offset: -6px; border-radius: 8px; }
+.pk-blastoise .pk-poke-ft-item { border-style: dashed; }
 
-/* 03. VENUSAUR (Imagen Pequeña - Marco Orgánico Simétrico) */
-.v-venasaur .pk-poke-img-sm { border-radius: 15px 4px 15px 4px; }
-.v-venasaur { border-left: 6px solid var(--grupo-color, #666); border-right: 1px solid var(--grupo-color, #666); border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); }
+/* 03. VENUSAUR (Forest Vines & Corner Notch) */
+.pk-venusaur { border-left: 8px solid var(--grupo-color, #666); border-top: 1px solid var(--grupo-color, #666); border-right: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); }
+.pk-venusaur .pk-poke-img-small { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%); }
 
-/* 04. ARCANINE (Imagen Pequeña - Corte Dinámico) */
-.v-arcanine .pk-poke-img-sm { clip-path: polygon(0 0, 100% 15px, 100% 100%, 0 calc(100% - 15px)); }
-.v-arcanine { border: 2px solid var(--grupo-color, #666); border-radius: 0 20px 0 20px; }
+/* 04. GENGAR (Shadow Prism) */
+.pk-gengar { border: 2px solid var(--grupo-color, #666); border-radius: 20px 0 20px 0; box-shadow: 5px 5px 0 0 var(--grupo-color, #666); }
 
-/* 05. GENGAR (Imagen Pequeña - Sombra Abisal Neón) */
-.v-gengar .pk-poke-img-sm { border: 1px dashed var(--grupo-color, #666); }
-.v-gengar { border: 1px solid var(--grupo-color, #666); box-shadow: 0 0 20px rgba(0,0,0,0.25); }
+/* 05. DRAGONITE (Aero Scale & Dashed Box) */
+.pk-dragonite { border-top: 3px solid var(--grupo-color, #666); border-bottom: 3px solid var(--grupo-color, #666); border-left: 1px dashed var(--grupo-color, #666); border-right: 1px dashed var(--grupo-color, #666); }
 
-/* 06. DRAGONITE (Imagen Pequeña - Doble Banda Lateral) */
-.v-dragonite .pk-poke-img-sm { border-top: 4px solid var(--grupo-color, #666); border-bottom: 4px solid var(--grupo-color, #666); }
-.v-dragonite { border-top: 3px solid var(--grupo-color, #666); border-bottom: 3px solid var(--grupo-color, #666); border-left: 1px solid var(--grupo-color, #666); border-right: 1px solid var(--grupo-color, #666); }
+/* 06. TYRANITAR (Mountain Monolith) */
+.pk-tyranitar { border: 3px double var(--grupo-color, #666); border-radius: 12px; }
+.pk-tyranitar .pk-poke-head { background: rgba(0,0,0,0.05); padding: 8px; border-radius: 4px; }
 
-/* 07. TYRANITAR (Imagen Pequeña - Bloque Tectónico) */
-.v-tyranitar .pk-poke-img-sm { border-radius: 0; border: 2px solid var(--grupo-color, #666); }
-.v-tyranitar { border: 2px solid var(--grupo-color, #666); outline: 1px dashed var(--grupo-color, #666); outline-offset: -5px; }
+/* 07. ESPEON (Psychic Gem) */
+.pk-espeon { border: 1px solid var(--grupo-color, #666); outline: 1px solid var(--grupo-color, #666); outline-offset: 6px; border-radius: 14px; }
 
-/* 08. LUGIA (Imagen Amplia - Monolito Celestial) */
-.v-lugia .pk-poke-img-lg { clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px); }
-.v-lugia { border: 2px solid var(--grupo-color, #666); border-radius: 12px; }
 
-/* 09. HO-OH (Imagen Amplia - Santuario Sagrado) */
-.v-hooh .pk-poke-img-lg { border-radius: 10px; border: 3px double var(--grupo-color, #666); }
-.v-hooh { border-top: 4px solid var(--grupo-color, #666); border-bottom: 4px solid var(--grupo-color, #666); border-left: 1px solid var(--grupo-color, #666); border-right: 1px solid var(--grupo-color, #666); }
+/* --- GRUPO B: 3 TABLILLAS CON IMAGEN AMPLIA / PANORÁMICA --- */
 
-/* 10. ESPEON & UMBREON (Imagen Amplia - Dualidad Geométrica) */
-.v-espeon .pk-poke-img-lg { clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%); }
-.v-espeon { border: 2px solid var(--grupo-color, #666); border-radius: 20px 6px 20px 6px; box-shadow: 5px 5px 0 0 var(--grupo-color, #666); }
+/* 08. MEWTWO (Psi-Laboratory Wide Frame) */
+.pk-mewtwo-w { border: 2px solid var(--grupo-color, #666); border-radius: 30px 6px 30px 6px; }
+
+/* 09. LUGIA (Abyssal Guardian Wide Frame) */
+.pk-lugia-w { border-left: 10px solid var(--grupo-color, #666); border-right: 2px solid var(--grupo-color, #666); border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); }
+
+/* 10. HO-OH (Sacred Flames Wide Frame) */
+.pk-hooh-w { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 50% 100%, 0 calc(100% - 20px)); padding-bottom: 32px; }
