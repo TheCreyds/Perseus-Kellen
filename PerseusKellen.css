@@ -4011,127 +4011,127 @@
     font-size: 29px;
   }
 }
+
 /* =========================================================
-   CREYDS & KELLEN - POKÉMON STYLES (EXTERNOS)
+   CREYDS & KELLEN - POKÉMON GEN 1 & 2 MASTERPIECES (CON IMAGEN)
    ========================================================= */
 
-.pk-pokemon {
-  width: 540px;
+.pk-poke-box {
+  width: 520px;
   max-width: 95%;
   margin: 30px auto;
-  padding: 26px;
+  padding: 25px;
   box-sizing: border-box;
   background: transparent;
   color: inherit;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Inter, sans-serif;
   font-size: 13px;
   line-height: 1.8;
   position: relative;
+  overflow: hidden;
 }
 
-.pk-pk-head {
+.pk-poke-head {
   display: flex;
   align-items: center;
   gap: 15px;
   border-bottom: 2px solid var(--grupo-color, #666);
   padding-bottom: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
-.pk-pk-img-small {
-  width: 55px;
-  height: 55px;
-  border: 2px solid var(--grupo-color, #666);
+/* Espacios de imagen alineados en la misma línea del título */
+.pk-poke-img-small {
+  width: 65px;
+  height: 65px;
   flex-shrink: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0,0,0,0.05);
-}
-.pk-pk-img-small img { width: 100%; height: 100%; object-fit: cover; }
-
-.pk-pk-img-wide {
-  width: 90px;
-  height: 55px;
   border: 2px solid var(--grupo-color, #666);
-  flex-shrink: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0,0,0,0.05);
+  object-fit: cover;
+  background: rgba(0,0,0,0.1);
 }
-.pk-pk-img-wide img { width: 100%; height: 100%; object-fit: cover; }
 
-.pk-pk-title {
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--grupo-color, inherit);
-  margin: 0;
+.pk-poke-img-large {
+  width: 110px;
+  height: 75px;
+  flex-shrink: 0;
+  border: 2px solid var(--grupo-color, #666);
+  object-fit: cover;
+  background: rgba(0,0,0,0.1);
+}
+
+.pk-poke-title-wrap {
   flex-grow: 1;
 }
 
-.pk-pk-body {
-  padding: 18px;
-  margin-bottom: 16px;
+.pk-poke-subtitle {
+  font-size: 8px;
+  font-family: monospace;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.pk-poke-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+}
+
+.pk-poke-body {
   text-align: justify;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
 }
 
-.pk-pk-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  text-align: center;
-}
-
-.pk-pk-ft-item {
-  padding: 6px;
+.pk-poke-footer {
+  border-top: 1px dashed var(--grupo-color, #666);
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
-/* 01. CHARIZARD */
-.pk-pk1 .pk-pk-body { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 15px, 15px 0, 100% 0, 100% 100%, 0 100%); }
-.pk-pk1 .pk-pk-ft-item { border: 1px solid var(--grupo-color, #666); }
+/* --- 7 CON ESPACIOS PEQUEÑOS DE IMAGEN --- */
 
-/* 02. BLASTOISE */
-.pk-pk2 .pk-pk-body { border-left: 8px solid var(--grupo-color, #666); border-right: 2px solid var(--grupo-color, #666); border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); }
-.pk-pk2 .pk-pk-ft-item { background: rgba(0,0,0,0.04); border: 1px solid var(--grupo-color, #666); }
+/* 01. CHARIZARD (Flama Vectorial Angulada) */
+.pk-charizard { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%); }
+.pk-charizard .pk-poke-img-small { border-radius: 4px; }
 
-/* 03. VENUSAUR */
-.pk-pk3 .pk-pk-body { border: 1px solid var(--grupo-color, #666); outline: 2px solid var(--grupo-color, #666); outline-offset: -5px; border-radius: 8px; }
-.pk-pk3 .pk-pk-head { border-bottom: 1px dashed var(--grupo-color, #666); }
+/* 02. BLASTOISE (Caparazón Hexagonal Doble) */
+.pk-blastoise { border: 1px solid var(--grupo-color, #666); outline: 2px solid var(--grupo-color, #666); outline-offset: -6px; border-radius: 8px; }
 
-/* 04. GENGAR */
-.pk-pk4 .pk-pk-body { border: 2px solid var(--grupo-color, #666); border-radius: 0 25px 0 25px; box-shadow: 5px 5px 0 0 var(--grupo-color, #666); }
-.pk-pk4 .pk-pk-ft-item { border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); }
+/* 03. VENUSAUR (Fronda Botánica con Marco Doble) */
+.pk-venusaur { border: 4px double var(--grupo-color, #666); border-radius: 16px; padding: 28px; }
 
-/* 05. DRAGONITE */
-.pk-pk5 .pk-pk-body { border-top: 3px solid var(--grupo-color, #666); border-bottom: 3px solid var(--grupo-color, #666); border-left: 1px dashed var(--grupo-color, #666); border-right: 1px dashed var(--grupo-color, #666); }
-.pk-pk5 .pk-pk-title { letter-spacing: 4px; }
+/* 04. DRAGONITE (Matriz Escamada Asimétrica) */
+.pk-dragonite { border-left: 8px solid var(--grupo-color, #666); border-right: 2px solid var(--grupo-color, #666); border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); }
 
-/* 06. TYPHLOSION */
-.pk-pk6 .pk-pk-body { border: 2px solid var(--grupo-color, #666); border-radius: 16px; box-shadow: inset 0 0 12px rgba(0,0,0,0.15); }
-.pk-pk6 .pk-pk-ft-item { border: 1px dashed var(--grupo-color, #666); border-radius: 4px; }
+/* 05. GENGAR (Sombras Espectrales Intermitentes) */
+.pk-gengar { border: 2px solid var(--grupo-color, #666); border-radius: 20px 0 20px 0; box-shadow: 5px 5px 0 0 var(--grupo-color, #666); }
 
-/* 07. FERALIGATR */
-.pk-pk7 .pk-pk-body { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%); }
-.pk-pk7 .pk-pk-head { background: rgba(0,0,0,0.04); padding: 8px; border-radius: 4px; }
+/* 06. ARCANINE (Emblema Noble Canino) */
+.pk-arcanine { border-top: 3px solid var(--grupo-color, #666); border-bottom: 3px solid var(--grupo-color, #666); border-left: 1px dashed var(--grupo-color, #666); border-right: 1px dashed var(--grupo-color, #666); border-radius: 10px; }
 
-/* 08. MEGANIUM (Amplia) */
-.pk-pk8 .pk-pk-body { border: 4px double var(--grupo-color, #666); border-radius: 12px; }
-.pk-pk8 .pk-pk-ft-item { border: 1px solid var(--grupo-color, #666); }
+/* 07. TYRANITAR (Monolito Rocoso de Johto) */
+.pk-tyranitar { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%); }
 
-/* 09. TYRANITAR (Amplia) */
-.pk-pk9 .pk-pk-body { border: 2px solid var(--grupo-color, #666); outline: 1px dashed var(--grupo-color, #666); outline-offset: -6px; }
-.pk-pk9 .pk-pk-head { border-bottom: 2px solid var(--grupo-color, #666); }
 
-/* 10. LUGIA (Amplia) */
-.pk-pk10 .pk-pk-body { border-left: 6px double var(--grupo-color, #666); border-right: 6px double var(--grupo-color, #666); border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); }
-.pk-pk10 .pk-pk-ft-item { background: rgba(0,0,0,0.05); border: 1px solid var(--grupo-color, #666); }
+/* --- 3 CON IMAGEN UN POCO MÁS AMPLIA --- */
+
+/* 08. LUGIA (Santuario Abisal Amplio) */
+.pk-lugia-wide { border: 1px solid var(--grupo-color, #666); outline: 1px solid var(--grupo-color, #666); outline-offset: 6px; border-radius: 12px; }
+
+/* 09. HO-OH (Alas Sagradas Celestiales) */
+.pk-hooh-wide { border-top: 4px solid var(--grupo-color, #666); border-bottom: 4px solid var(--grupo-color, #666); border-left: 2px solid var(--grupo-color, #666); border-right: 2px solid var(--grupo-color, #666); border-radius: 20px; }
+
+/* 10. MEWTWO (Cápsula Psíquica Experimental) */
+.pk-mewtwo-wide { border: 2px solid var(--grupo-color, #666); border-radius: 40px 8px 40px 8px; box-shadow: inset 0 0 20px rgba(0,0,0,0.15); }
