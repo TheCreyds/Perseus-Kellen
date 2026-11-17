@@ -4011,9 +4011,8 @@
     font-size: 29px;
   }
 }
-
 /* =========================================================
-   CREYDS & KELLEN - SET POKÉMON (GEN 1 & 2) MASTERPIECES
+   CREYDS & KELLEN - POKÉMON STYLES (EXTERNOS)
    ========================================================= */
 
 .pk-pokemon {
@@ -4039,7 +4038,6 @@
   margin-bottom: 16px;
 }
 
-/* Espacios para imágenes en la misma línea del título */
 .pk-pk-img-small {
   width: 55px;
   height: 55px;
@@ -4098,47 +4096,42 @@
   opacity: 0.85;
 }
 
-/* --- 7 TABLILLAS CON IMAGEN PEQUEÑA --- */
-
-/* 01. CHARIZARD (Fuego Asimétrico) */
+/* 01. CHARIZARD */
 .pk-pk1 .pk-pk-body { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 15px, 15px 0, 100% 0, 100% 100%, 0 100%); }
 .pk-pk1 .pk-pk-ft-item { border: 1px solid var(--grupo-color, #666); }
 
-/* 02. BLASTOISE (Caparazón Acorazado) */
+/* 02. BLASTOISE */
 .pk-pk2 .pk-pk-body { border-left: 8px solid var(--grupo-color, #666); border-right: 2px solid var(--grupo-color, #666); border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); }
 .pk-pk2 .pk-pk-ft-item { background: rgba(0,0,0,0.04); border: 1px solid var(--grupo-color, #666); }
 
-/* 03. VENUSAUR (Sello Floral Geométrico) */
+/* 03. VENUSAUR */
 .pk-pk3 .pk-pk-body { border: 1px solid var(--grupo-color, #666); outline: 2px solid var(--grupo-color, #666); outline-offset: -5px; border-radius: 8px; }
 .pk-pk3 .pk-pk-head { border-bottom: 1px dashed var(--grupo-color, #666); }
 
-/* 04. GENGAR (Sombras Espectrales) */
+/* 04. GENGAR */
 .pk-pk4 .pk-pk-body { border: 2px solid var(--grupo-color, #666); border-radius: 0 25px 0 25px; box-shadow: 5px 5px 0 0 var(--grupo-color, #666); }
 .pk-pk4 .pk-pk-ft-item { border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); }
 
-/* 05. DRAGONITE (Placa Legendaria) */
+/* 05. DRAGONITE */
 .pk-pk5 .pk-pk-body { border-top: 3px solid var(--grupo-color, #666); border-bottom: 3px solid var(--grupo-color, #666); border-left: 1px dashed var(--grupo-color, #666); border-right: 1px dashed var(--grupo-color, #666); }
 .pk-pk5 .pk-pk-title { letter-spacing: 4px; }
 
-/* 06. TYPHLOSION (Magma Interior) */
+/* 06. TYPHLOSION */
 .pk-pk6 .pk-pk-body { border: 2px solid var(--grupo-color, #666); border-radius: 16px; box-shadow: inset 0 0 12px rgba(0,0,0,0.15); }
 .pk-pk6 .pk-pk-ft-item { border: 1px dashed var(--grupo-color, #666); border-radius: 4px; }
 
-/* 07. FERALIGATR (Mandíbulas de Acero) */
+/* 07. FERALIGATR */
 .pk-pk7 .pk-pk-body { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%); }
 .pk-pk7 .pk-pk-head { background: rgba(0,0,0,0.04); padding: 8px; border-radius: 4px; }
 
-
-/* --- 3 TABLILLAS CON IMAGEN MÁS AMPLIA --- */
-
-/* 08. MEGANIUM (Jardín Ceremonial - Imagen Ancha) */
+/* 08. MEGANIUM (Amplia) */
 .pk-pk8 .pk-pk-body { border: 4px double var(--grupo-color, #666); border-radius: 12px; }
 .pk-pk8 .pk-pk-ft-item { border: 1px solid var(--grupo-color, #666); }
 
-/* 09. TYRANITAR (Montaña Tectónica - Imagen Ancha) */
+/* 09. TYRANITAR (Amplia) */
 .pk-pk9 .pk-pk-body { border: 2px solid var(--grupo-color, #666); outline: 1px dashed var(--grupo-color, #666); outline-offset: -6px; }
 .pk-pk9 .pk-pk-head { border-bottom: 2px solid var(--grupo-color, #666); }
 
-/* 10. LUGIA (Guardián Abisal - Imagen Ancha) */
+/* 10. LUGIA (Amplia) */
 .pk-pk10 .pk-pk-body { border-left: 6px double var(--grupo-color, #666); border-right: 6px double var(--grupo-color, #666); border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666); }
 .pk-pk10 .pk-pk-ft-item { background: rgba(0,0,0,0.05); border: 1px solid var(--grupo-color, #666); }
